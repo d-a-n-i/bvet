@@ -224,6 +224,8 @@
     padding:.35rem .8rem;border-radius:999px;display:inline-flex;align-items:center;gap:.4rem;box-shadow:var(--shadow-md);
   }
   .badge-open .dot{width:8px;height:8px;border-radius:50%;background:#7BE3B8;box-shadow:0 0 0 0 rgba(123,227,184,.7);animation:ping 2s ease-out infinite}
+  .badge-open.closed{background:var(--ink-soft)}
+  .badge-open.closed .dot{background:#C9D4CE;animation:none;box-shadow:none}
   @keyframes ping{0%{box-shadow:0 0 0 0 rgba(123,227,184,.6)}70%{box-shadow:0 0 0 8px rgba(123,227,184,0)}100%{box-shadow:0 0 0 0 rgba(123,227,184,0)}}
   @media (prefers-reduced-motion:reduce){.badge-open .dot{animation:none}}
 
@@ -486,7 +488,7 @@
         </div>
 
         <aside class="hero-card">
-          <span class="badge-open"><span class="dot"></span> פתוח היום · 16:00–19:00</span>
+          <span class="badge-open" id="openBadge" hidden><span class="dot"></span> <span class="badge-txt"></span></span>
           <figure class="hero-photo">
             <img src="assets/hero-dog-child.jpg" width="1000" height="666" alt="ילד קטן מלטף כלב מחייך בחדר הקבלה של מרפאת בן ארי" fetchpriority="high" />
             <figcaption>
@@ -665,10 +667,10 @@
           <div class="hours-card reveal">
             <h3>שעות פעילות</h3>
             <table class="hours">
-              <tbody>
-                <tr class="today"><th>ראשון–חמישי</th><td>10:00–13:00 · 16:00–19:00</td></tr>
-                <tr><th>שישי</th><td>14:30–17:00</td></tr>
-                <tr><th>שבת</th><td>סגור</td></tr>
+              <tbody id="hoursBody">
+                <tr data-days="0,1,2,3,4"><th>ראשון–חמישי</th><td>10:00–13:00 · 16:00–19:00</td></tr>
+                <tr data-days="5"><th>שישי</th><td>14:30–17:00</td></tr>
+                <tr data-days="6"><th>שבת</th><td>סגור</td></tr>
               </tbody>
             </table>
             <ul class="addr-list">
@@ -822,6 +824,61 @@
       burger.setAttribute('aria-expanded',open?'true':'false');
     });
     menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');});});}
+
+    /* live open/closed status (Israel time) */
+    (function(){
+      var badge=document.getElementById('openBadge');
+      var DAYS=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+      // opening intervals per day, in minutes from midnight
+      var HOURS=[
+        [[600,780],[960,1140]], // Sun 10–13, 16–19
+        [[600,780],[960,1140]], // Mon
+        [[600,780],[960,1140]], // Tue
+        [[600,780],[960,1140]], // Wed
+        [[600,780],[960,1140]], // Thu
+        [[870,1020]],           // Fri 14:30–17:00
+        []                      // Sat closed
+      ];
+      function now(){
+        try{
+          var p=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Jerusalem',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+          var o={};p.forEach(function(x){o[x.type]=x.value;});
+          var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+          var h=parseInt(o.hour,10);if(h===24)h=0;
+          return {d:map[o.weekday],m:h*60+parseInt(o.minute,10)};
+        }catch(e){
+          var n=new Date();return {d:n.getDay(),m:n.getHours()*60+n.getMinutes()};
+        }
+      }
+      function fmt(m){var h=Math.floor(m/60),mm=m%60;return h+':'+(mm<10?'0':'')+mm;}
+      // highlight today's row
+      var body=document.getElementById('hoursBody');
+      var t=now();
+      if(body){Array.prototype.forEach.call(body.querySelectorAll('tr'),function(tr){
+        var ds=(tr.getAttribute('data-days')||'').split(',');
+        tr.classList.toggle('today',ds.indexOf(String(t.d))>-1);
+      });}
+      if(!badge)return;
+      var today=HOURS[t.d],open=false,until=0,nextOpen=null;
+      for(var i=0;i<today.length;i++){
+        if(t.m>=today[i][0]&&t.m<today[i][1]){open=true;until=today[i][1];break;}
+        if(t.m<today[i][0]){nextOpen={day:t.d,at:today[i][0]};break;}
+      }
+      var txt;
+      if(open){txt='פתוח כעת · עד '+fmt(until);}
+      else{
+        if(!nextOpen){ // find next open day within a week
+          for(var k=1;k<=7;k++){var dd=(t.d+k)%7;if(HOURS[dd].length){nextOpen={day:dd,at:HOURS[dd][0][0],future:true};break;}}
+        }
+        if(nextOpen){
+          var when=(nextOpen.day===t.d&&!nextOpen.future)?'היום':(nextOpen.day===(t.d+1)%7?'מחר':'ביום '+DAYS[nextOpen.day]);
+          txt='סגור כעת · נפתח '+when+' ב-'+fmt(nextOpen.at);
+        }else{txt='סגור כעת';}
+      }
+      badge.querySelector('.badge-txt').textContent=txt;
+      badge.classList.toggle('closed',!open);
+      badge.hidden=false;
+    })();
 
     var header=document.querySelector('.site-header');
     var onScroll=function(){header.classList.toggle('scrolled',window.scrollY>8);};
