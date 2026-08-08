@@ -20,6 +20,10 @@
 <meta property="og:image" content="https://www.bvet.co.il/wp-content/uploads/2026/06/vet-with-dogs-768x1024.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://www.bvet.co.il/wp-content/uploads/2026/06/vet-with-dogs-768x1024.jpg" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Fredoka:wght@500;600;700&family=Secular+One&display=swap" rel="stylesheet" />
 
 <style>
   /* ============ TOKENS ============ */
@@ -69,11 +73,13 @@
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   body{
     margin:0;background:var(--bg);color:var(--ink);
-    font-family:"Assistant","Heebo","Rubik",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-    line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    font-family:"Rubik","Heebo","Assistant",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   }
   .rtl{direction:rtl}
-  h1,h2,h3,h4{margin:0;line-height:1.14;text-wrap:balance;font-weight:800;letter-spacing:-.01em}
+  h1,h2,h3,h4{margin:0;line-height:1.14;text-wrap:balance;font-weight:800;letter-spacing:-.015em;
+    font-family:"Fredoka","Rubik","Heebo",system-ui,sans-serif;}
+  h1,.hero h1{font-weight:700}
   p{margin:0}
   a{color:inherit;text-decoration:none}
   img,svg{max-width:100%;display:block}
@@ -126,20 +132,40 @@
 
   /* ============ HERO ============ */
   .hero{position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,6vw,5rem)}
-  .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(46rem 30rem at 12% -8%,var(--brand-soft),transparent 60%),radial-gradient(40rem 26rem at 96% 8%,color-mix(in srgb,var(--accent-soft) 70%,transparent),transparent 62%);opacity:.9}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(46rem 30rem at 12% -8%,var(--brand-soft),transparent 60%),radial-gradient(40rem 26rem at 96% 8%,color-mix(in srgb,var(--accent-soft) 70%,transparent),transparent 62%);opacity:.9;animation:heroDrift 16s ease-in-out infinite alternate}
+  @keyframes heroDrift{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-2%,1.5%,0) scale(1.06)}}
+  @media (prefers-reduced-motion:reduce){.hero::before{animation:none}}
   .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
-  .hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);letter-spacing:-.025em}
-  .hero h1 .hl{color:var(--brand);white-space:nowrap}
+  .hero h1{font-size:clamp(2.2rem,5.4vw,3.8rem);letter-spacing:-.02em}
+  .hero h1 .hl{white-space:nowrap;color:var(--brand);
+    background:linear-gradient(92deg,var(--brand),var(--accent-strong));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .hero .lead{margin-top:1.25rem;font-size:clamp(1.05rem,2vw,1.2rem);color:var(--ink-soft);max-width:40ch}
   .hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
   .hero-stats{display:flex;gap:1.8rem;margin-top:2.4rem;flex-wrap:wrap}
   .hero-stats .num{font-size:1.85rem;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;line-height:1}
   .hero-stats .lbl{font-size:.84rem;color:var(--muted);margin-top:.3rem}
   .hero-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:1.5rem;box-shadow:var(--shadow-lg)}
-  .hero-photo{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-md);aspect-ratio:4/3;background:var(--brand-soft)}
-  .hero-photo img{width:100%;height:100%;object-fit:cover}
-  .hero-photo figcaption{position:absolute;inset-block-end:0;inset-inline:0;padding:.9rem 1rem .8rem;background:linear-gradient(0deg,rgba(11,22,19,.82),transparent);color:#fff;font-size:.86rem;font-weight:600;display:flex;align-items:center;gap:.45rem}
-  .hero-photo figcaption svg{width:16px;height:16px;flex:0 0 auto;color:#7BE3B8}
+  /* animated dog + cat scene */
+  .illus{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;
+    background:radial-gradient(130% 130% at 80% 0%,var(--brand-soft),var(--surface-2) 78%)}
+  .illus svg{position:absolute;inset:0;width:100%;height:100%}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  @keyframes bob2{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  @keyframes wag{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(16deg)}}
+  @keyframes sway{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(9deg)}}
+  @keyframes blink{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.12)}}
+  @keyframes floatHeart{0%{opacity:0;transform:translateY(6px) scale(.5)}25%{opacity:1}75%{opacity:.9}100%{opacity:0;transform:translateY(-42px) scale(1.05)}}
+  @keyframes pawrise{0%{opacity:0;transform:translateY(24px) scale(.7)}25%{opacity:.5}100%{opacity:0;transform:translateY(-70px) scale(1.05)}}
+  .sc-cat{animation:bob 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  .sc-dog{animation:bob2 4.4s ease-in-out infinite .3s;transform-box:fill-box;transform-origin:center}
+  .sc-dogtail{animation:wag .6s ease-in-out infinite;transform-box:fill-box;transform-origin:0% 100%}
+  .sc-cattail{animation:sway 3s ease-in-out infinite;transform-box:fill-box;transform-origin:100% 100%}
+  .sc-eye{animation:blink 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  .sc-dog .sc-eye{animation-delay:.4s}
+  .sc-heart{animation:floatHeart 3.4s ease-in-out infinite;transform-box:fill-box}
+  .sc-heart2{animation:floatHeart 3.4s ease-in-out infinite 1.7s;transform-box:fill-box}
+  .sc-paw{animation:pawrise 7s linear infinite;transform-box:fill-box}
+  @media (prefers-reduced-motion:reduce){.illus *{animation:none!important}}
   .quickfacts{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem}
   .quickfacts li{display:flex;align-items:center;gap:.7rem;font-size:.95rem;color:var(--ink-soft)}
   .quickfacts .qi{width:34px;height:34px;border-radius:10px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:0 0 auto}
@@ -402,13 +428,55 @@
 
         <aside class="hero-card">
           <span class="badge-open" id="openBadge" hidden><span class="dot"></span> <span class="badge-txt"></span></span>
-          <figure class="hero-photo">
-            <img src="assets/hero-dog-child.jpg" width="1000" height="666" alt="ילד קטן מלטף כלב מחייך בחדר הקבלה של מרפאת בן ארי" fetchpriority="high" />
-            <figcaption>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg>
-              רגעים אמיתיים מהמרפאה שלנו
-            </figcaption>
-          </figure>
+          <div class="illus" role="img" aria-label="איור מונפש של כלב וחתול חמודים עם לבבות מרחפים">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <!-- floating paw prints -->
+              <g fill="var(--brand)" opacity=".16">
+                <g class="sc-paw" style="animation-delay:0s"><g transform="translate(64 250) scale(.9)"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="2.8"/><circle cx="-2" cy="-8" r="2.8"/><circle cx="4" cy="-8" r="2.8"/><circle cx="9" cy="-4" r="2.8"/></g></g>
+                <g class="sc-paw" style="animation-delay:2.3s"><g transform="translate(340 250) scale(1.1)"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="2.8"/><circle cx="-2" cy="-8" r="2.8"/><circle cx="4" cy="-8" r="2.8"/><circle cx="9" cy="-4" r="2.8"/></g></g>
+                <g class="sc-paw" style="animation-delay:4.6s"><g transform="translate(300 255) scale(.7)"><ellipse cx="0" cy="6" rx="7" ry="6"/><circle cx="-7" cy="-4" r="2.8"/><circle cx="-2" cy="-8" r="2.8"/><circle cx="4" cy="-8" r="2.8"/><circle cx="9" cy="-4" r="2.8"/></g></g>
+              </g>
+              <!-- ground shadow -->
+              <ellipse cx="205" cy="250" rx="140" ry="15" fill="rgba(0,0,0,.06)"/>
+
+              <!-- floating hearts -->
+              <g class="sc-heart"><path d="M200 96c-7-11-22-6-22 5.5 0 10 22 20 22 20s22-10 22-20c0-11.5-15-16.5-22-5.5Z" fill="#EF6D7A"/></g>
+              <g class="sc-heart2"><path d="M234 104c-5-8-15-4-15 4 0 7 15 14 15 14s15-7 15-14c0-8-10-12-15-4Z" fill="#F59AA6"/></g>
+
+              <!-- ===== CAT (orange tabby) ===== -->
+              <g class="sc-cat">
+                <path class="sc-cattail" d="M128 236C96 226 88 190 104 170c9-11 20-6 17 5-10 12-6 34 14 44Z" fill="#E8933A"/>
+                <path d="M118 240c0-42 13-70 38-70s38 28 38 70Z" fill="#E8933A"/>
+                <path d="M142 240c0-28 6-46 14-46s14 18 14 46Z" fill="#F6D9A8"/>
+                <path d="M132 122 118 94l30 16Z" fill="#E8933A"/>
+                <path d="M180 122 194 94l-30 16Z" fill="#E8933A"/>
+                <path d="M134 116 124 100l18 11Z" fill="#C97F16"/>
+                <path d="M178 116 188 100l-18 11Z" fill="#C97F16"/>
+                <circle cx="156" cy="140" r="33" fill="#E8933A"/>
+                <path d="M156 110v10M144 113l3 10M168 113l-3 10" stroke="#C97F16" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                <ellipse cx="156" cy="151" rx="17" ry="13" fill="#F6D9A8"/>
+                <g class="sc-eye"><ellipse cx="145" cy="139" rx="4.2" ry="5.4" fill="#33241d"/><ellipse cx="167" cy="139" rx="4.2" ry="5.4" fill="#33241d"/><circle cx="146.4" cy="137.2" r="1.3" fill="#fff"/><circle cx="168.4" cy="137.2" r="1.3" fill="#fff"/></g>
+                <path d="M156 148l-4 4h8Z" fill="#C15B5B"/>
+                <path d="M156 152v4M156 156c-3 3-7 2-9 0M156 156c3 3 7 2 9 0" stroke="#8a5a3a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M138 148h-15M139 154h-13M174 148h15M173 154h13" stroke="#C97F16" stroke-width="1.5" opacity=".55" stroke-linecap="round"/>
+              </g>
+
+              <!-- ===== DOG (cream) ===== -->
+              <g class="sc-dog">
+                <path class="sc-dogtail" d="M284 236c30-8 40-40 27-60-8-12-20-6-16 6 9 13 3 34-19 42Z" fill="#E7D6B6"/>
+                <path d="M212 240c0-42 14-70 40-70s40 28 40 70Z" fill="#EFE1C7"/>
+                <path d="M238 240c0-28 6-46 14-46s14 18 14 46Z" fill="#FBF4E6"/>
+                <circle cx="252" cy="146" r="36" fill="#EFE1C7"/>
+                <path d="M222 120c-16 3-20 30-6 42 9 8 19 1 16-11-4-11-2-25-10-31Z" fill="#C79A63"/>
+                <path d="M282 120c16 3 20 30 6 42-9 8-19 1-16-11 4-11 2-25 10-31Z" fill="#C79A63"/>
+                <ellipse cx="252" cy="159" rx="21" ry="16" fill="#FBF4E6"/>
+                <g class="sc-eye"><ellipse cx="239" cy="143" rx="4.6" ry="5.8" fill="#33241d"/><ellipse cx="265" cy="143" rx="4.6" ry="5.8" fill="#33241d"/><circle cx="240.6" cy="141" r="1.4" fill="#fff"/><circle cx="266.6" cy="141" r="1.4" fill="#fff"/></g>
+                <ellipse cx="252" cy="152" rx="6.5" ry="5" fill="#33241d"/>
+                <path d="M252 157v6M252 163c-4 4-10 3-12 0M252 163c4 4 10 3 12 0" stroke="#8a5a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                <path d="M247 166c3 7 8 7 10 0Z" fill="#EE8FA0"/>
+              </g>
+            </svg>
+          </div>
           <ul class="quickfacts">
             <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span> <span><b>ברודצקי 43</b>, רמת אביב — צמוד לקניון רמת אביב</span></li>
             <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span> <span>א׳–ה׳ 10–13, 16–19 · ו׳ 14:30–17</span></li>
@@ -605,11 +673,12 @@
           <figure class="tall"><img src="assets/dog-cat.jpg" width="720" height="960" loading="lazy" alt="כלב וחתול מצטנפים יחד" /><figcaption>כלב וחתול — חברים הכי טובים</figcaption></figure>
           <figure class="wide"><img src="assets/cat-child.jpg" width="1000" height="666" loading="lazy" alt="ילדה מנשקת חתול על שולחן הבדיקה" /><figcaption>ביקור רגוע, גם לקטנטנים</figcaption></figure>
           <figure><img src="assets/surgery-monitor.jpg" width="1000" height="666" loading="lazy" alt="ד״ר תומר בן ארי בטיפול תחת ניטור הרדמה" /><figcaption>ניטור מלא בחדר הטיפולים</figcaption></figure>
-          <figure class="tall"><img src="assets/bana.jpg" width="540" height="960" loading="lazy" alt="כלב ויזלה עם עיניים גדולות ממתין במרפאה" /><figcaption>ממתינים בנחת</figcaption></figure>
+          <figure><img src="assets/bana.jpg" width="540" height="960" loading="lazy" alt="כלב ויזלה עם עיניים גדולות ממתין במרפאה" /><figcaption>ממתינים בנחת</figcaption></figure>
           <figure><img src="assets/scale-dog.jpg" width="960" height="960" loading="lazy" alt="כלב מחייך עומד על משקל במרפאה" /><figcaption>בדיקת משקל שגרתית</figcaption></figure>
           <figure><img src="assets/imaging-xray.jpg" width="686" height="459" loading="lazy" alt="וטרינר בוחן צילום רנטגן דיגיטלי של חיה" /><figcaption>אבחון בעזרת רנטגן דיגיטלי</figcaption></figure>
           <figure class="wide"><img src="assets/shih-tzu.jpg" width="1000" height="666" loading="lazy" alt="כלב שיצו בחדר ההמתנה" /><figcaption>פרצוף שאי אפשר לעמוד בפניו</figcaption></figure>
           <figure><img src="assets/puppy.jpg" width="1000" height="666" loading="lazy" alt="גור פוינטר עם עיניים גדולות מביט למעלה" /><figcaption>גורים מקבלים יחס מיוחד</figcaption></figure>
+          <figure><img src="assets/hero-dog-child.jpg" width="1000" height="666" loading="lazy" alt="ילד קטן מלטף כלב מחייך בחדר הקבלה" /><figcaption>רגעים אמיתיים מהמרפאה</figcaption></figure>
         </div>
       </div>
     </section>
