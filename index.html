@@ -217,7 +217,6 @@
   .doc{display:flex;gap:1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.4rem;box-shadow:var(--shadow-sm)}
   .doc .av{width:96px;height:96px;border-radius:50%;overflow:hidden;flex:0 0 auto;border:3px solid var(--brand-soft);background:var(--brand-soft)}
   .doc .av img{width:100%;height:100%;object-fit:cover}
-  .doc .mono{display:grid;place-items:center;background:linear-gradient(150deg,var(--brand),var(--brand-strong));color:#fff;font-size:2.4rem;font-weight:800}
   .doc h3{font-size:1.2rem}
   .doc .role{color:var(--brand);font-weight:700;font-size:.88rem;margin-top:.15rem}
   .doc p{color:var(--ink-soft);font-size:.94rem;margin-top:.55rem}
@@ -338,6 +337,36 @@
   .map-cta svg{width:18px;height:18px;color:var(--brand);flex:0 0 auto}
   .map-cta:hover{color:var(--brand);border-color:var(--brand)}
 
+  /* ============ CONTACT ============ */
+  .contact-grid{display:grid;grid-template-columns:1.3fr .82fr;gap:1.5rem;align-items:start}
+  @media (max-width:820px){.contact-grid{grid-template-columns:1fr}}
+  .form-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:1.7rem 1.8rem;box-shadow:var(--shadow-sm)}
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-weight:700;font-size:.9rem;margin-bottom:.4rem}
+  .field label .req{color:var(--accent-strong)}
+  .field input,.field textarea{width:100%;padding:.8rem 1rem;border-radius:12px;border:1.5px solid var(--line);background:var(--surface-2);color:var(--ink);font-family:inherit;font-size:1rem;transition:border-color .15s,box-shadow .15s}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--ring)}
+  .field textarea{min-height:120px;resize:vertical}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  @media (max-width:520px){.form-row{grid-template-columns:1fr}}
+  .form-note{font-size:.85rem;color:var(--muted);margin-top:.5rem}
+  .honey{display:none!important}
+  .form-status{margin-top:1rem;padding:.9rem 1.1rem;border-radius:12px;font-weight:600;font-size:.95rem}
+  .form-status[hidden]{display:none}
+  .form-status.ok{background:var(--brand-soft);color:var(--brand)}
+  .form-status.err{background:color-mix(in srgb,#e05656 16%,var(--surface));color:#c0453f}
+  .contact-side{display:grid;gap:.75rem;align-content:start}
+  .cbtn{display:flex;align-items:center;gap:.85rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.95rem 1.1rem;box-shadow:var(--shadow-sm);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .cbtn:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--brand-soft)}
+  @media (prefers-reduced-motion:reduce){.cbtn:hover{transform:none}}
+  .cbtn .ci{width:44px;height:44px;border-radius:12px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:0 0 auto}
+  .cbtn .ci svg{width:22px;height:22px}
+  .cbtn b{display:block;font-size:1rem}
+  .cbtn span{display:block;font-size:.83rem;color:var(--muted)}
+  .cbtn.fb .ci{background:#e7edf7;color:#1877F2}
+  :root[data-theme="dark"] .cbtn.fb .ci{background:#1c2740}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cbtn.fb .ci{background:#1c2740}}
+
   /* ============ FAQ ============ */
   .faq{max-width:820px;margin-inline:auto}
   .faq details{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:.7rem;box-shadow:var(--shadow-sm);overflow:hidden}
@@ -384,8 +413,8 @@
         <a href="#stories">סיפורי מטופלים</a>
         <a href="#gallery">גלריה</a>
         <a href="#reviews">המלצות</a>
-        <a href="#blog">מאמרים</a>
         <a href="#location">שעות ומיקום</a>
+        <a href="#contact">צור קשר</a>
       </nav>
       <div class="nav-actions">
         <button class="icon-btn" id="theme" aria-label="החלפת מצב תצוגה בהיר/כהה">
@@ -519,7 +548,7 @@
 
             <div class="docs">
               <article class="doc">
-                <div class="av mono" aria-hidden="true">מ</div>
+                <div class="av"><img src="assets/moshe.png" width="502" height="502" loading="lazy" alt="ד״ר משה בן ארי עם כלב במרפאה" /></div>
                 <div>
                   <h3>ד"ר משה בן ארי</h3>
                   <div class="role">מייסד המרפאה · וטרינר</div>
@@ -807,8 +836,79 @@
       </div>
     </section>
 
+    <!-- ============ CONTACT ============ -->
+    <section class="band" id="contact">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">צור קשר</span>
+          <h2>נשמח לשמוע מכם</h2>
+          <p>לכל שאלה, בקשה או קביעת תור — מלאו את הטופס ונחזור אליכם בהקדם, או פשוט התקשרו אלינו.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="form-card reveal">
+            <form id="contactForm" action="https://formsubmit.co/benarivet@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="פנייה חדשה מאתר מרפאת בן ארי" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://d85c.com/bvet/?sent=1#contact" />
+              <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-name">שם מלא <span class="req">*</span></label>
+                  <input id="cf-name" name="שם" required autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="cf-phone">טלפון <span class="req">*</span></label>
+                  <input id="cf-phone" name="טלפון" type="tel" required autocomplete="tel" inputmode="tel" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-email">אימייל</label>
+                  <input id="cf-email" name="אימייל" type="email" autocomplete="email" />
+                </div>
+                <div class="field">
+                  <label for="cf-pet">שם וסוג החיה</label>
+                  <input id="cf-pet" name="החיה" placeholder="לדוגמה: לונה, כלבה" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="cf-msg">במה נוכל לעזור?</label>
+                <textarea id="cf-msg" name="הודעה" placeholder="ספרו לנו בקצרה על הפנייה או על מה שחשוב לכם לבדוק"></textarea>
+              </div>
+              <button class="btn" type="submit" style="width:100%">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                שליחת הפנייה
+              </button>
+              <p class="form-note">בשליחת הטופס אתם מסכימים שניצור אתכם קשר בנוגע לפנייתכם. פרטיכם לא יימסרו לצד שלישי.</p>
+              <div class="form-status" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+
+          <div class="contact-side reveal">
+            <a class="cbtn" href="tel:+97236413361">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <span><b>03-6413361</b><span>חייגו בשעות הפעילות</span></span>
+            </a>
+            <a class="cbtn" href="mailto:benarivet@gmail.com">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span><b>benarivet@gmail.com</b><span>שלחו לנו מייל</span></span>
+            </a>
+            <a class="cbtn fb" href="https://www.facebook.com/BenArivet/" target="_blank" rel="noopener">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></span>
+              <span><b>מרפאת בן ארי</b><span>עקבו אחרינו בפייסבוק</span></span>
+            </a>
+            <a class="cbtn" href="https://maps.google.com/?q=ברודצקי+43+תל+אביב" target="_blank" rel="noopener">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><b>ברודצקי 43, רמת אביב</b><span>ניווט עם Waze / Google Maps</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ LOCATION ============ -->
-    <section class="band" id="location">
+    <section class="band band--alt" id="location">
       <div class="wrap">
         <div class="sec-head reveal">
           <span class="eyebrow">שעות ומיקום</span>
@@ -843,7 +943,7 @@
     </section>
 
     <!-- ============ FAQ ============ -->
-    <section class="band band--alt" id="faq">
+    <section class="band" id="faq">
       <div class="wrap">
         <div class="sec-head center reveal">
           <span class="eyebrow">שאלות נפוצות</span>
@@ -905,6 +1005,8 @@
           <ul>
             <li><a href="tel:+97236413361">03-6413361</a></li>
             <li><a href="mailto:benarivet@gmail.com">benarivet@gmail.com</a></li>
+            <li><a href="#contact">טופס יצירת קשר</a></li>
+            <li><a href="https://www.facebook.com/BenArivet/" target="_blank" rel="noopener">פייסבוק — מרפאת בן ארי</a></li>
             <li><a href="https://maps.google.com/?q=ברודצקי+43+תל+אביב" target="_blank" rel="noopener">ברודצקי 43, רמת אביב</a></li>
             <li>א׳–ה׳ 10–13, 16–19 · ו׳ 14:30–17</li>
           </ul>
@@ -1034,6 +1136,26 @@
       badge.querySelector('.badge-txt').textContent=txt;
       badge.classList.toggle('closed',!open);
       badge.hidden=false;
+    })();
+
+    /* contact form: AJAX submit with inline feedback (no-JS falls back to form action) */
+    (function(){
+      var form=document.getElementById('contactForm');
+      if(!form)return;
+      var status=form.querySelector('.form-status');
+      function show(type,msg){status.hidden=false;status.className='form-status '+type;status.textContent=msg;}
+      if(/[?&]sent=1/.test(location.search)){show('ok','תודה! הפנייה נשלחה ונחזור אליכם בהקדם.');}
+      form.addEventListener('submit',function(e){
+        if(!form.checkValidity())return;
+        e.preventDefault();
+        var btn=form.querySelector('button[type=submit]');var orig=btn.innerHTML;
+        btn.disabled=true;btn.textContent='שולח…';
+        fetch('https://formsubmit.co/ajax/benarivet@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+          .then(function(r){return r.json();})
+          .then(function(){show('ok','תודה! הפנייה נשלחה ונחזור אליכם בהקדם.');form.reset();})
+          .catch(function(){show('err','אירעה שגיאה בשליחה. אפשר להתקשר אלינו ל-03-6413361 או לשלוח מייל ל-benarivet@gmail.com.');})
+          .then(function(){btn.disabled=false;btn.innerHTML=orig;});
+      });
     })();
 
     var header=document.querySelector('.site-header');
