@@ -32,8 +32,9 @@ or the source above isn't set).
 
 ## Editing
 
-Edit `index.html` and push to `main`; Pages rebuilds automatically.
-Everything (CSS, JS, SVG illustrations) is inline in the one file — no build step.
+Edit `index.html` and push to `main`; Pages rebuilds automatically. CSS and JS
+are inline in the one file — no build step. Photos live in `assets/` and are
+referenced with relative paths (they resolve under `d85c.com/bvet/assets/…`).
 
 ## Custom subdomain (optional)
 
