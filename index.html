@@ -3,18 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>מרפאת בן ארי — וטרינר בצפון תל אביב | ד"ר משה בן ארי</title>
-<meta name="description" content="מרפאת בן ארי ברמת אביב — טיפול וטרינרי מקצועי ואוהב לכלבים וחתולים בצפון תל אביב: חיסונים, כירורגיה, טיפולי שיניים, דימות וייעוץ. חייגו 03-6413361." />
+<title>מרפאת בן ארי — מרפאה וטרינרית בתל אביב מאז 1985 | ד"ר משה וד"ר תומר בן ארי</title>
+<meta name="description" content="מרפאת בן ארי ברמת אביב — המרפאה הווטרינרית הוותיקה בתל אביב, מאז 1985. שני דורות של רופאים לכלב ולחתול: כירורגיה, חיסונים, דימות, מעבדה, שיניים וייעוץ. חייגו 03-6413361." />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#1E6E58" />
 <link rel="canonical" href="https://www.bvet.co.il/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
 <!-- Open Graph / social -->
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="he_IL" />
 <meta property="og:site_name" content="מרפאת בן ארי" />
-<meta property="og:title" content="מרפאת בן ארי — וטרינר בצפון תל אביב | ד&quot;ר משה בן ארי" />
-<meta property="og:description" content="טיפול וטרינרי מקצועי ואוהב לכלבים וחתולים ברמת אביב, צפון תל אביב. חייגו 03-6413361." />
+<meta property="og:title" content="מרפאת בן ארי — מרפאה וטרינרית בתל אביב מאז 1985" />
+<meta property="og:description" content="המרפאה הווטרינרית הוותיקה בתל אביב. שני דורות של רופאים — ד״ר משה וד״ר תומר בן ארי — לכלב ולחתול שלכם. רמת אביב · 03-6413361." />
 <meta property="og:url" content="https://www.bvet.co.il/" />
 <meta property="og:image" content="https://www.bvet.co.il/wp-content/uploads/2026/06/vet-with-dogs-768x1024.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -44,20 +45,9 @@
   }
   :root:not([data-theme="light"]){
     @media (prefers-color-scheme:dark){
-      --bg:#0D1613;
-      --surface:#13211C;
-      --surface-2:#182A23;
-      --ink:#E9F1EC;
-      --ink-soft:#B6C7BE;
-      --muted:#89A096;
-      --line:#25382F;
-      --brand:#54C2A0;
-      --brand-strong:#71D2B4;
-      --brand-soft:#173229;
-      --accent:#ECB35B;
-      --accent-strong:#F2C377;
-      --accent-soft:#2C2517;
-      --ring:rgba(84,194,160,.4);
+      --bg:#0D1613;--surface:#13211C;--surface-2:#182A23;--ink:#E9F1EC;--ink-soft:#B6C7BE;
+      --muted:#89A096;--line:#25382F;--brand:#54C2A0;--brand-strong:#71D2B4;--brand-soft:#173229;
+      --accent:#ECB35B;--accent-strong:#F2C377;--accent-soft:#2C2517;--ring:rgba(84,194,160,.4);
       --shadow-sm:0 1px 2px rgba(0,0,0,.3),0 2px 8px rgba(0,0,0,.25);
       --shadow-md:0 8px 20px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.3);
       --shadow-lg:0 24px 55px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.4);
@@ -65,20 +55,9 @@
     }
   }
   :root[data-theme="dark"]{
-    --bg:#0D1613;
-    --surface:#13211C;
-    --surface-2:#182A23;
-    --ink:#E9F1EC;
-    --ink-soft:#B6C7BE;
-    --muted:#89A096;
-    --line:#25382F;
-    --brand:#54C2A0;
-    --brand-strong:#71D2B4;
-    --brand-soft:#173229;
-    --accent:#ECB35B;
-    --accent-strong:#F2C377;
-    --accent-soft:#2C2517;
-    --ring:rgba(84,194,160,.4);
+    --bg:#0D1613;--surface:#13211C;--surface-2:#182A23;--ink:#E9F1EC;--ink-soft:#B6C7BE;
+    --muted:#89A096;--line:#25382F;--brand:#54C2A0;--brand-strong:#71D2B4;--brand-soft:#173229;
+    --accent:#ECB35B;--accent-strong:#F2C377;--accent-soft:#2C2517;--ring:rgba(84,194,160,.4);
     --shadow-sm:0 1px 2px rgba(0,0,0,.3),0 2px 8px rgba(0,0,0,.25);
     --shadow-md:0 8px 20px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.3);
     --shadow-lg:0 24px 55px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.4);
@@ -88,41 +67,26 @@
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
   body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
+    margin:0;background:var(--bg);color:var(--ink);
     font-family:"Assistant","Heebo","Rubik",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+    line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   }
   .rtl{direction:rtl}
-
-  h1,h2,h3{margin:0;line-height:1.12;text-wrap:balance;font-weight:800;letter-spacing:-.01em}
+  h1,h2,h3,h4{margin:0;line-height:1.14;text-wrap:balance;font-weight:800;letter-spacing:-.01em}
   p{margin:0}
   a{color:inherit;text-decoration:none}
   img,svg{max-width:100%;display:block}
-
   .wrap{width:min(1160px,92vw);margin-inline:auto}
-
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:.5rem;
-    font-size:.72rem;font-weight:700;letter-spacing:.16em;
-    text-transform:uppercase;color:var(--brand);
-  }
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brand)}
   .eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
-
   :focus-visible{outline:3px solid var(--ring);outline-offset:3px;border-radius:8px}
 
   /* ============ BUTTONS ============ */
   .btn{
-    --_bg:var(--brand);--_fg:#fff;
-    display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
-    padding:.85rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;
-    background:var(--_bg);color:var(--_fg);border:1.5px solid transparent;
-    cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+    --_bg:var(--brand);--_fg:#fff;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    padding:.85rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;background:var(--_bg);color:var(--_fg);
+    border:1.5px solid transparent;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
     box-shadow:var(--shadow-sm);white-space:nowrap;
   }
   .btn svg{width:19px;height:19px}
@@ -133,51 +97,27 @@
   @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
 
   /* ============ HEADER ============ */
-  .site-header{
-    position:sticky;top:0;z-index:60;
-    backdrop-filter:saturate(1.4) blur(12px);
-    background:color-mix(in srgb,var(--bg) 82%,transparent);
-    border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s;
-  }
+  .site-header{position:sticky;top:0;z-index:60;backdrop-filter:saturate(1.4) blur(12px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
   .site-header.scrolled{border-color:var(--line);box-shadow:var(--shadow-sm)}
   .nav{display:flex;align-items:center;gap:1.1rem;padding:.7rem 0;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.12rem}
-  .brand .mark{
-    width:40px;height:40px;border-radius:12px;flex:0 0 auto;
-    background:linear-gradient(150deg,var(--brand),var(--brand-strong));
-    display:grid;place-items:center;box-shadow:var(--shadow-sm);
-  }
+  .brand .mark{width:40px;height:40px;border-radius:12px;flex:0 0 auto;background:linear-gradient(150deg,var(--brand),var(--brand-strong));display:grid;place-items:center;box-shadow:var(--shadow-sm)}
   .brand .mark svg{width:23px;height:23px;color:#fff}
   .brand small{display:block;font-size:.68rem;font-weight:600;color:var(--muted);letter-spacing:.02em}
-  .nav-links{display:flex;align-items:center;gap:.35rem}
-  .nav-links a{
-    padding:.5rem .8rem;border-radius:999px;font-weight:600;font-size:.95rem;color:var(--ink-soft);
-    transition:color .15s,background .15s;
-  }
+  .nav-links{display:flex;align-items:center;gap:.2rem}
+  .nav-links a{padding:.5rem .7rem;border-radius:999px;font-weight:600;font-size:.93rem;color:var(--ink-soft);transition:color .15s,background .15s}
   .nav-links a:hover{color:var(--brand);background:var(--brand-soft)}
   .nav-actions{display:flex;align-items:center;gap:.55rem}
-  .icon-btn{
-    width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
-    background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;
-    transition:background .15s,border-color .15s;
-  }
+  .icon-btn{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:background .15s,border-color .15s}
   .icon-btn:hover{background:var(--brand-soft);border-color:var(--brand)}
   .icon-btn svg{width:20px;height:20px}
   .sun{display:none}
   :root[data-theme="dark"] .sun{display:block}
   :root[data-theme="dark"] .moon{display:none}
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]) .sun{display:block}
-    :root:not([data-theme="light"]) .moon{display:none}
-  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sun{display:block}:root:not([data-theme="light"]) .moon{display:none}}
   .menu-toggle{display:none}
-
-  @media (max-width:860px){
-    .nav-links{
-      position:absolute;inset-inline:4vw;top:calc(100% + 8px);flex-direction:column;align-items:stretch;
-      background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.6rem;
-      box-shadow:var(--shadow-lg);gap:.15rem;display:none;
-    }
+  @media (max-width:960px){
+    .nav-links{position:absolute;inset-inline:4vw;top:calc(100% + 8px);flex-direction:column;align-items:stretch;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:.6rem;box-shadow:var(--shadow-lg);gap:.15rem;display:none}
     .nav-links.open{display:flex}
     .nav-links a{padding:.7rem .9rem}
     .menu-toggle{display:grid}
@@ -185,113 +125,140 @@
   }
 
   /* ============ HERO ============ */
-  .hero{position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,6vw,5.5rem)}
-  .hero::before{
-    content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-    background:
-      radial-gradient(46rem 30rem at 12% -8%,var(--brand-soft),transparent 60%),
-      radial-gradient(40rem 26rem at 96% 8%,color-mix(in srgb,var(--accent-soft) 70%,transparent),transparent 62%);
-    opacity:.9;
-  }
-  .hero-grid{
-    position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);
-    align-items:center;
-  }
-  .hero h1{font-size:clamp(2.15rem,5.4vw,3.7rem);letter-spacing:-.025em}
-  .hero h1 .hl{color:var(--brand);position:relative;white-space:nowrap}
-  .hero .lead{margin-top:1.25rem;font-size:clamp(1.05rem,2vw,1.22rem);color:var(--ink-soft);max-width:34ch}
+  .hero{position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,6vw,5rem)}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(46rem 30rem at 12% -8%,var(--brand-soft),transparent 60%),radial-gradient(40rem 26rem at 96% 8%,color-mix(in srgb,var(--accent-soft) 70%,transparent),transparent 62%);opacity:.9}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+  .hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);letter-spacing:-.025em}
+  .hero h1 .hl{color:var(--brand);white-space:nowrap}
+  .hero .lead{margin-top:1.25rem;font-size:clamp(1.05rem,2vw,1.2rem);color:var(--ink-soft);max-width:40ch}
   .hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
-  .hero-stats{display:flex;gap:2rem;margin-top:2.4rem;flex-wrap:wrap}
-  .hero-stats .num{font-size:1.9rem;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;line-height:1}
-  .hero-stats .lbl{font-size:.86rem;color:var(--muted);margin-top:.3rem}
-
-  /* hero card */
-  .hero-card{
-    position:relative;background:var(--surface);border:1px solid var(--line);border-radius:24px;
-    padding:1.5rem;box-shadow:var(--shadow-lg);
-  }
+  .hero-stats{display:flex;gap:1.8rem;margin-top:2.4rem;flex-wrap:wrap}
+  .hero-stats .num{font-size:1.85rem;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;line-height:1}
+  .hero-stats .lbl{font-size:.84rem;color:var(--muted);margin-top:.3rem}
+  .hero-card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:1.5rem;box-shadow:var(--shadow-lg)}
+  .hero-photo{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-md);aspect-ratio:4/3;background:var(--brand-soft)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .hero-photo figcaption{position:absolute;inset-block-end:0;inset-inline:0;padding:.9rem 1rem .8rem;background:linear-gradient(0deg,rgba(11,22,19,.82),transparent);color:#fff;font-size:.86rem;font-weight:600;display:flex;align-items:center;gap:.45rem}
+  .hero-photo figcaption svg{width:16px;height:16px;flex:0 0 auto;color:#7BE3B8}
   .quickfacts{list-style:none;margin:1.1rem 0 0;padding:0;display:grid;gap:.55rem}
-  .quickfacts li{display:flex;align-items:center;gap:.7rem;font-size:.96rem;color:var(--ink-soft)}
-  .quickfacts .qi{
-    width:34px;height:34px;border-radius:10px;background:var(--brand-soft);color:var(--brand);
-    display:grid;place-items:center;flex:0 0 auto;
-  }
+  .quickfacts li{display:flex;align-items:center;gap:.7rem;font-size:.95rem;color:var(--ink-soft)}
+  .quickfacts .qi{width:34px;height:34px;border-radius:10px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:0 0 auto}
   .quickfacts .qi svg{width:18px;height:18px}
   .quickfacts b{color:var(--ink);font-weight:700}
-  .badge-open{
-    position:absolute;inset-block-start:-12px;inset-inline-start:1.5rem;
-    background:var(--brand);color:#fff;font-size:.78rem;font-weight:700;
-    padding:.35rem .8rem;border-radius:999px;display:inline-flex;align-items:center;gap:.4rem;box-shadow:var(--shadow-md);
-  }
+  .badge-open{position:absolute;inset-block-start:-12px;inset-inline-start:1.5rem;background:var(--brand);color:#fff;font-size:.78rem;font-weight:700;padding:.35rem .8rem;border-radius:999px;display:inline-flex;align-items:center;gap:.4rem;box-shadow:var(--shadow-md)}
   .badge-open .dot{width:8px;height:8px;border-radius:50%;background:#7BE3B8;box-shadow:0 0 0 0 rgba(123,227,184,.7);animation:ping 2s ease-out infinite}
   .badge-open.closed{background:var(--ink-soft)}
   .badge-open.closed .dot{background:#C9D4CE;animation:none;box-shadow:none}
   @keyframes ping{0%{box-shadow:0 0 0 0 rgba(123,227,184,.6)}70%{box-shadow:0 0 0 8px rgba(123,227,184,0)}100%{box-shadow:0 0 0 0 rgba(123,227,184,0)}}
   @media (prefers-reduced-motion:reduce){.badge-open .dot{animation:none}}
-
-  @media (max-width:860px){
-    .hero-grid{grid-template-columns:1fr}
-    .hero .lead{max-width:48ch}
-    .hero-card{order:-1}
-  }
+  @media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero .lead{max-width:48ch}.hero-card{order:-1}}
 
   /* ============ SECTION SHELL ============ */
   section[id]{scroll-margin-top:84px}
   .band{padding:clamp(3rem,7vw,5.5rem) 0}
   .band--alt{background:var(--surface-2);border-block:1px solid var(--line)}
-  .sec-head{max-width:60ch;margin-bottom:2.5rem}
+  .sec-head{max-width:64ch;margin-bottom:2.5rem}
+  .sec-head.center{text-align:center;margin-inline:auto}
+  .sec-head.center .eyebrow{justify-content:center}
   .sec-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin-top:.8rem}
   .sec-head p{margin-top:.9rem;color:var(--ink-soft);font-size:1.06rem}
 
-  /* ============ SERVICES ============ */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-  @media (max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:560px){.cards{grid-template-columns:1fr}}
-  .card{
-    background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;
-    box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
-    position:relative;overflow:hidden;
-  }
-  .card::after{content:"";position:absolute;inset-block-start:0;inset-inline:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));transform:scaleX(0);transform-origin:right;transition:transform .3s ease}
-  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--brand-soft)}
-  .card:hover::after{transform:scaleX(1)}
-  @media (prefers-reduced-motion:reduce){.card:hover{transform:none}}
-  .card .ci{
-    width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:1rem;
-    background:var(--brand-soft);color:var(--brand);
-  }
-  .card .ci svg{width:26px;height:26px}
-  .card h3{font-size:1.18rem}
-  .card p{margin-top:.5rem;color:var(--ink-soft);font-size:.98rem}
+  /* ============ TRUST BAR ============ */
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+  .trust .t{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:1.3rem 1rem;text-align:center;box-shadow:var(--shadow-sm)}
+  .trust .tn{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--brand);line-height:1}
+  .trust .tl{color:var(--muted);font-size:.9rem;margin-top:.4rem}
+  @media (max-width:680px){.trust{grid-template-columns:repeat(2,1fr)}}
 
   /* ============ ABOUT ============ */
-  .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,3.2rem);align-items:center}
-  @media (max-width:820px){.about{grid-template-columns:1fr}}
-  .portrait{
-    background:linear-gradient(160deg,var(--brand-soft),var(--surface-2));
-    border:1px solid var(--line);border-radius:24px;padding:2rem;display:grid;place-items:center;
-    box-shadow:var(--shadow-md);position:relative;
-  }
-  .portrait svg{width:100%;max-width:230px;color:var(--brand)}
-  .portrait .tag{
-    position:absolute;inset-block-end:-14px;inset-inline-start:50%;transform:translateX(50%);
-    background:var(--surface);border:1px solid var(--line);border-radius:999px;
-    padding:.5rem 1.1rem;font-size:.85rem;font-weight:700;box-shadow:var(--shadow-md);color:var(--brand);white-space:nowrap;
-  }
+  .about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(1.5rem,4vw,3.2rem);align-items:center}
+  @media (max-width:860px){.about{grid-template-columns:1fr}}
+  .about-photo{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-md);aspect-ratio:4/5;background:var(--brand-soft)}
+  .about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+  .about-photo .tag{position:absolute;inset-block-end:1rem;inset-inline:1rem;background:color-mix(in srgb,var(--surface) 94%,transparent);border:1px solid var(--line);border-radius:14px;padding:.7rem 1rem;font-size:.9rem;font-weight:700;color:var(--brand);box-shadow:var(--shadow-md);backdrop-filter:blur(6px);display:flex;align-items:center;gap:.5rem}
+  .about-photo .tag svg{width:18px;height:18px;flex:0 0 auto}
   .about h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:1rem}
-  .about p{color:var(--ink-soft);margin-bottom:1rem;max-width:60ch}
+  .about p{color:var(--ink-soft);margin-bottom:1rem;max-width:62ch}
+  .about p b{color:var(--ink)}
   .creds{list-style:none;padding:0;margin:1.3rem 0 0;display:grid;gap:.6rem}
   .creds li{display:flex;gap:.65rem;align-items:flex-start;color:var(--ink)}
   .creds .ck{color:var(--brand);flex:0 0 auto;margin-top:.15rem}
   .creds .ck svg{width:20px;height:20px}
 
+  /* ============ DOCTORS ============ */
+  .docs{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2.2rem}
+  @media (max-width:760px){.docs{grid-template-columns:1fr}}
+  .doc{display:flex;gap:1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.4rem;box-shadow:var(--shadow-sm)}
+  .doc .av{width:96px;height:96px;border-radius:50%;overflow:hidden;flex:0 0 auto;border:3px solid var(--brand-soft);background:var(--brand-soft)}
+  .doc .av img{width:100%;height:100%;object-fit:cover}
+  .doc .mono{display:grid;place-items:center;background:linear-gradient(150deg,var(--brand),var(--brand-strong));color:#fff;font-size:2.4rem;font-weight:800}
+  .doc h3{font-size:1.2rem}
+  .doc .role{color:var(--brand);font-weight:700;font-size:.88rem;margin-top:.15rem}
+  .doc p{color:var(--ink-soft);font-size:.94rem;margin-top:.55rem}
+
+  /* ============ CREDO ============ */
+  .credo{background:linear-gradient(150deg,var(--brand),var(--brand-strong));color:#fff;border-radius:26px;padding:clamp(2rem,4vw,3.2rem);position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+  .credo::before{content:"";position:absolute;inset-block-start:-30%;inset-inline-start:-8%;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.07)}
+  .credo .qmark{font-size:5rem;line-height:.6;color:rgba(255,255,255,.35);font-family:Georgia,serif;position:relative}
+  .credo .eyebrow{color:#B9EED9}
+  .credo .eyebrow::before{background:var(--accent)}
+  .credo blockquote{margin:0;position:relative;max-width:70ch}
+  .credo blockquote p{color:rgba(255,255,255,.94);font-size:clamp(1.05rem,2vw,1.28rem);margin-bottom:1rem;line-height:1.7}
+  .credo .sig{margin-top:1.4rem;font-weight:800;font-size:1.05rem;display:flex;align-items:center;gap:.6rem}
+  .credo .sig span{color:#B9EED9;font-weight:600;font-size:.9rem}
+
+  /* ============ SERVICES ============ */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+  @media (max-width:960px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+  .card::after{content:"";position:absolute;inset-block-start:0;inset-inline:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));transform:scaleX(0);transform-origin:right;transition:transform .3s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--brand-soft)}
+  .card:hover::after{transform:scaleX(1)}
+  @media (prefers-reduced-motion:reduce){.card:hover{transform:none}}
+  .card .ci{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:1rem;background:var(--brand-soft);color:var(--brand)}
+  .card .ci svg{width:26px;height:26px}
+  .card h3{font-size:1.12rem}
+  .card p{margin-top:.5rem;color:var(--ink-soft);font-size:.95rem}
+
+  /* ============ FEATURE SPLIT ============ */
+  .feature{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+  .feature.rev .fimg{order:2}
+  @media (max-width:820px){.feature{grid-template-columns:1fr}.feature.rev .fimg{order:0}}
+  .fimg{border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-md);aspect-ratio:4/3;background:var(--brand-soft)}
+  .fimg img{width:100%;height:100%;object-fit:cover}
+  .feature h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:1rem}
+  .feature p{color:var(--ink-soft);margin-bottom:1rem;max-width:60ch}
+
+  /* ============ STORIES ============ */
+  .stories{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+  @media (max-width:900px){.stories{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:600px){.stories{grid-template-columns:1fr}}
+  .story{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;box-shadow:var(--shadow-sm);border-inline-start:4px solid var(--accent);display:flex;flex-direction:column;gap:.55rem}
+  .story .st-head{display:flex;align-items:center;gap:.6rem}
+  .story .pi{width:38px;height:38px;border-radius:11px;background:var(--accent-soft);color:var(--accent-strong);display:grid;place-items:center;flex:0 0 auto}
+  .story .pi svg{width:22px;height:22px}
+  .story h3{font-size:1.12rem}
+  .story .tagline{color:var(--accent-strong);font-weight:700;font-size:.82rem}
+  .story p{color:var(--ink-soft);font-size:.95rem;margin-top:.2rem}
+
+  /* ============ GALLERY ============ */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:175px;gap:1rem;grid-auto-flow:dense}
+  .gallery figure{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:var(--brand-soft)}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gallery figure:hover img{transform:scale(1.06)}
+  @media (prefers-reduced-motion:reduce){.gallery figure:hover img{transform:none}}
+  .gallery .tall{grid-row:span 2}
+  .gallery .wide{grid-column:span 2}
+  .gallery figcaption{position:absolute;inset-block-end:0;inset-inline:0;padding:1.4rem .9rem .7rem;background:linear-gradient(0deg,rgba(11,22,19,.8),transparent);color:#fff;font-size:.82rem;font-weight:600;opacity:0;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease}
+  .gallery figure:hover figcaption,.gallery figure:focus-within figcaption{opacity:1;transform:none}
+  @media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}}
+  @media (max-width:560px){.gallery .tall{grid-row:span 1}}
+
   /* ============ REVIEWS ============ */
   .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
   @media (max-width:900px){.reviews{grid-template-columns:1fr}}
-  .review{
-    background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;box-shadow:var(--shadow-sm);
-    display:flex;flex-direction:column;gap:.9rem;
-  }
+  .review{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:.9rem}
   .stars{display:flex;gap:.15rem;color:var(--accent)}
   .stars svg{width:18px;height:18px}
   .review p{color:var(--ink);font-size:1rem}
@@ -300,16 +267,24 @@
   .review .who b{display:block;font-size:.95rem}
   .review .who span{font-size:.82rem;color:var(--muted)}
 
+  /* ============ BLOG ============ */
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+  @media (max-width:900px){.posts{grid-template-columns:1fr}}
+  .post{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.5rem;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:.6rem;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+  .post:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--brand-soft)}
+  @media (prefers-reduced-motion:reduce){.post:hover{transform:none}}
+  .post time{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .post h3{font-size:1.08rem;line-height:1.35}
+  .post .ex{color:var(--ink-soft);font-size:.94rem;flex:1}
+  .post .more{color:var(--brand);font-weight:700;font-size:.92rem;display:inline-flex;align-items:center;gap:.35rem}
+  .post .more svg{width:16px;height:16px}
+
   /* ============ EMERGENCY ============ */
-  .emergency{
-    background:linear-gradient(150deg,var(--brand),var(--brand-strong));color:#fff;
-    border-radius:26px;padding:clamp(1.8rem,4vw,3rem);display:grid;grid-template-columns:1fr auto;
-    gap:1.5rem;align-items:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
-  }
-  .emergency::before{content:"";position:absolute;inset-block-start:-40%;inset-inline-start:-10%;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.08)}
+  .emergency{background:linear-gradient(150deg,var(--accent-strong),#a8660f);color:#fff;border-radius:26px;padding:clamp(1.8rem,4vw,3rem);display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+  .emergency::before{content:"";position:absolute;inset-block-start:-40%;inset-inline-start:-10%;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.1)}
   .emergency h2{color:#fff;font-size:clamp(1.5rem,3.2vw,2.1rem);position:relative}
-  .emergency p{color:rgba(255,255,255,.86);margin-top:.6rem;max-width:52ch;position:relative}
-  .emergency .btn{position:relative;background:#fff;color:var(--brand-strong)}
+  .emergency p{color:rgba(255,255,255,.92);margin-top:.6rem;max-width:54ch;position:relative}
+  .emergency .btn{position:relative;background:#fff;color:#9a5c0c}
   .emergency .btn:hover{background:#fff}
   @media (max-width:720px){.emergency{grid-template-columns:1fr;text-align:start}}
 
@@ -331,20 +306,16 @@
   .addr-list .qi svg{width:18px;height:18px}
   .addr-list a{font-weight:700;color:var(--ink)}
   .addr-list a:hover{color:var(--brand)}
-  .map{
-    position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:340px;
-    background:var(--surface-2);box-shadow:var(--shadow-sm);
-  }
+  .map{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:var(--surface-2);box-shadow:var(--shadow-sm)}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map-cta{position:absolute;inset-block-end:14px;inset-inline:14px;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.7rem 1rem;border-radius:14px;font-weight:700;font-size:.95rem;background:color-mix(in srgb,var(--surface) 94%,transparent);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow-md);backdrop-filter:blur(6px)}
+  .map-cta svg{width:18px;height:18px;color:var(--brand);flex:0 0 auto}
+  .map-cta:hover{color:var(--brand);border-color:var(--brand)}
+
   /* ============ FAQ ============ */
   .faq{max-width:820px;margin-inline:auto}
-  .faq details{
-    background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:.7rem;
-    box-shadow:var(--shadow-sm);overflow:hidden;
-  }
-  .faq summary{
-    list-style:none;cursor:pointer;padding:1.1rem 1.3rem;font-weight:700;font-size:1.05rem;
-    display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  }
+  .faq details{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:.7rem;box-shadow:var(--shadow-sm);overflow:hidden}
+  .faq summary{list-style:none;cursor:pointer;padding:1.1rem 1.3rem;font-weight:700;font-size:1.05rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
   .faq summary::-webkit-details-marker{display:none}
   .faq summary .chev{transition:transform .2s ease;color:var(--brand);flex:0 0 auto}
   .faq details[open] summary .chev{transform:rotate(180deg)}
@@ -352,74 +323,19 @@
 
   /* ============ FOOTER ============ */
   .site-footer{background:var(--surface-2);border-top:1px solid var(--line);padding:3rem 0 2rem;margin-top:1rem}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem}
   @media (max-width:720px){.foot-grid{grid-template-columns:1fr;gap:1.6rem}}
   .foot-grid h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:0 0 1rem}
   .foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:.55rem}
   .foot-grid a{color:var(--ink-soft)}
   .foot-grid a:hover{color:var(--brand)}
-  .foot-brand p{color:var(--ink-soft);margin-top:.8rem;max-width:38ch;font-size:.95rem}
+  .foot-brand p{color:var(--ink-soft);margin-top:.8rem;max-width:40ch;font-size:.95rem}
   .foot-bottom{margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.85rem}
 
   /* sticky mobile call bar */
-  .callbar{
-    position:fixed;inset-block-end:0;inset-inline:0;z-index:70;display:none;
-    padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));
-    background:color-mix(in srgb,var(--surface) 92%,transparent);
-    backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.12);
-  }
+  .callbar{position:fixed;inset-block-end:0;inset-inline:0;z-index:70;display:none;padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.12)}
   .callbar .btn{width:100%}
   @media (max-width:860px){.callbar{display:block}main{padding-bottom:4.5rem}}
-
-  /* ============ PHOTOS ============ */
-  .hero-photo{
-    position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
-    box-shadow:var(--shadow-md);aspect-ratio:4/3;background:var(--brand-soft);
-  }
-  .hero-photo img{width:100%;height:100%;object-fit:cover}
-  .hero-photo figcaption{
-    position:absolute;inset-block-end:0;inset-inline:0;padding:.9rem 1rem .8rem;
-    background:linear-gradient(0deg,rgba(11,22,19,.82),transparent);
-    color:#fff;font-size:.86rem;font-weight:600;display:flex;align-items:center;gap:.45rem;
-  }
-  .hero-photo figcaption svg{width:16px;height:16px;flex:0 0 auto;color:#7BE3B8}
-
-  /* real portrait photo (about) */
-  .portrait.photo{padding:0;overflow:hidden;background:none;aspect-ratio:4/5}
-  .portrait.photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
-
-  /* ============ GALLERY ============ */
-  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:1rem}
-  .gallery figure{
-    margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
-    box-shadow:var(--shadow-sm);background:var(--brand-soft);
-  }
-  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-  .gallery figure:hover img{transform:scale(1.06)}
-  @media (prefers-reduced-motion:reduce){.gallery figure:hover img{transform:none}}
-  .gallery .tall{grid-row:span 2}
-  .gallery .wide{grid-column:span 2}
-  .gallery figcaption{
-    position:absolute;inset-block-end:0;inset-inline:0;padding:1.4rem .9rem .7rem;
-    background:linear-gradient(0deg,rgba(11,22,19,.8),transparent);
-    color:#fff;font-size:.82rem;font-weight:600;opacity:0;transform:translateY(8px);
-    transition:opacity .25s ease,transform .25s ease;
-  }
-  .gallery figure:hover figcaption,.gallery figure:focus-within figcaption{opacity:1;transform:none}
-  @media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .wide{grid-column:span 2}}
-  @media (max-width:560px){.gallery .wide{grid-column:span 2}.gallery .tall{grid-row:span 1}}
-
-  /* real map embed */
-  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  .map-cta{
-    position:absolute;inset-block-end:14px;inset-inline:14px;
-    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-    padding:.7rem 1rem;border-radius:14px;font-weight:700;font-size:.95rem;
-    background:color-mix(in srgb,var(--surface) 94%,transparent);color:var(--ink);
-    border:1px solid var(--line);box-shadow:var(--shadow-md);backdrop-filter:blur(6px);
-  }
-  .map-cta svg{width:18px;height:18px;color:var(--brand);flex:0 0 auto}
-  .map-cta:hover{color:var(--brand);border-color:var(--brand)}
 
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
@@ -427,28 +343,24 @@
 </style>
 </head>
 <body>
-
 <div class="rtl">
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="top">
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="מרפאת בן ארי — דף הבית">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg>
-        </span>
-        <span>מרפאת בן ארי<small>וטרינר בצפון תל אביב</small></span>
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span>
+        <span>מרפאת בן ארי<small>וטרינר בתל אביב · מאז 1985</small></span>
       </a>
-
       <nav class="nav-links" id="menu" aria-label="ניווט ראשי">
+        <a href="#about">על המרפאה</a>
         <a href="#services">שירותים</a>
-        <a href="#about">ד"ר בן ארי</a>
+        <a href="#stories">סיפורי מטופלים</a>
         <a href="#gallery">גלריה</a>
         <a href="#reviews">המלצות</a>
+        <a href="#blog">מאמרים</a>
         <a href="#location">שעות ומיקום</a>
-        <a href="#faq">שאלות נפוצות</a>
       </nav>
-
       <div class="nav-actions">
         <button class="icon-btn" id="theme" aria-label="החלפת מצב תצוגה בהיר/כהה">
           <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -471,8 +383,8 @@
       <div class="wrap hero-grid">
         <div>
           <span class="eyebrow">רמת אביב · צפון תל אביב</span>
-          <h1>רפואה וטרינרית <span class="hl">אכפתית</span> לכלב ולחתול שלכם</h1>
-          <p class="lead">מרפאת בן ארי מלווה חיות מחמד ובעליהן כבר עשרות שנים — טיפול מקצועי, יחס אישי וזמינות אמיתית ברגעים החשובים.</p>
+          <h1>רפואה וטרינרית אכפתית לכלב ולחתול — <span class="hl">מאז 1985</span></h1>
+          <p class="lead">מרפאת בן ארי היא המרפאה הווטרינרית הוותיקה בתל אביב. שני דורות של רופאים — ד״ר משה וד״ר תומר בן ארי — מלווים אתכם ואת בן משפחתכם בעל הפרווה לאורך כל הדרך.</p>
           <div class="hero-cta">
             <a class="btn" href="tel:+97236413361">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -481,9 +393,10 @@
             <a class="btn btn--ghost" href="#services">לשירותי המרפאה</a>
           </div>
           <div class="hero-stats">
-            <div><div class="num">30+</div><div class="lbl">שנות ניסיון קליני</div></div>
-            <div><div class="num">4.9★</div><div class="lbl">דירוג לקוחות</div></div>
-            <div><div class="num">כלב · חתול</div><div class="lbl">התמחות בחיות בית</div></div>
+            <div><div class="num">1985</div><div class="lbl">שנת ההקמה</div></div>
+            <div><div class="num">+40</div><div class="lbl">שנות ניסיון קליני</div></div>
+            <div><div class="num">אלפי</div><div class="lbl">ניתוחים במרפאה</div></div>
+            <div><div class="num">דור שני</div><div class="lbl">אב ובנו, יחד</div></div>
           </div>
         </div>
 
@@ -497,75 +410,185 @@
             </figcaption>
           </figure>
           <ul class="quickfacts">
-            <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span> <span><b>ברודצקי 43</b>, רמת אביב, תל אביב</span></li>
+            <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span> <span><b>ברודצקי 43</b>, רמת אביב — צמוד לקניון רמת אביב</span></li>
             <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span> <span>א׳–ה׳ 10–13, 16–19 · ו׳ 14:30–17</span></li>
             <li><span class="qi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span> <span><b>03-6413361</b> · benarivet@gmail.com</span></li>
           </ul>
         </aside>
       </div>
+    </section>
 
+    <!-- ============ TRUST BAR ============ -->
+    <section class="band" style="padding-block:clamp(1.5rem,3vw,2.5rem)">
+      <div class="wrap">
+        <div class="trust reveal">
+          <div class="t"><div class="tn">הוותיקה בת״א</div><div class="tl">המרפאה הווטרינרית הוותיקה בתל אביב</div></div>
+          <div class="t"><div class="tn">כלב · חתול</div><div class="tl">התמחות ברפואת חיות מחמד</div></div>
+          <div class="t"><div class="tn">מעבדה במקום</div><div class="tl">תוצאות דם תוך דקות</div></div>
+          <div class="t"><div class="tn">SOS לחיות</div><div class="tl">מלווים את העמותה מיום היווסדה</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="band band--alt" id="about">
+      <div class="wrap">
+        <div class="about">
+          <figure class="about-photo reveal">
+            <img src="assets/team-benari.jpg" width="768" height="1024" loading="lazy" alt="רופא במרפאת בן ארי מחבק שני כלבי רועים" />
+            <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg> רפואה באהבה, מאז 1985</span>
+          </figure>
+          <div class="reveal">
+            <span class="eyebrow">על המרפאה</span>
+            <h2>המרפאה הווטרינרית הוותיקה בתל אביב</h2>
+            <p>מרפאת בן ארי הוקמה על-ידי <b>ד"ר משה בן ארי בשנת 1985</b>, והיא המרפאה הווטרינרית הוותיקה ביותר בתל אביב. המרפאה ממוקמת ברחוב ברודצקי 43, במרכז המסחרי הצמוד לקניון רמת אביב.</p>
+            <p>מזה עשרות שנים אנחנו מקדישים את עצמנו לטיפול בבעלי חיים באהבה רבה, במקצועיות ובהתלהבות שרק הולכת וגדלה — היום, כבר בדור שני של רופאים במשפחה אחת.</p>
+            <ul class="creds">
+              <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> חדר ניתוח, מעבדת דם ואמצעי דימות — הכול במקום אחד</li>
+              <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> חברות בארגון הרופאים הווטרינרים לחיות מחמד והשתלמויות בארץ ובחו"ל</li>
+              <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> ליווי עמותת ‘SOS לחיות’ מיום היווסדה — ימי אימוץ וטיפול בחיות חסרות בית</li>
+            </ul>
+
+            <div class="docs">
+              <article class="doc">
+                <div class="av mono" aria-hidden="true">מ</div>
+                <div>
+                  <h3>ד"ר משה בן ארי</h3>
+                  <div class="role">מייסד המרפאה · וטרינר</div>
+                  <p>בוגר הפקולטה לווטרינריה בבולוניה שבאיטליה. הקים את המרפאה ב-1985 ומאז מלווה בעלי חיים ומשפחות בצפון תל אביב, בעשרות שנות ניסיון קליני.</p>
+                </div>
+              </article>
+              <article class="doc">
+                <div class="av"><img src="assets/tomer.png" width="502" height="502" loading="lazy" alt="ד״ר תומר בן ארי עם כלב ג׳ק ראסל" /></div>
+                <div>
+                  <h3>ד"ר תומר בן ארי</h3>
+                  <div class="role">דור ההמשך · וטרינר</div>
+                  <p>בנו של משה ובוגר בית הספר לווטרינריה של האוניברסיטה העברית. לאחר כשנתיים במרפאת חירום גדולה בתל אביב הצטרף למרפאת אביו המתחדשת.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDO ============ -->
+    <section class="band">
+      <div class="wrap">
+        <div class="credo reveal">
+          <div class="qmark" aria-hidden="true">”</div>
+          <span class="eyebrow">ה"אני מאמין" שלנו</span>
+          <blockquote>
+            <p>וטרינר הוא למעשה ‘רופאים רבים ברופא אחד’ — פנימאי, אורתופד, כירורג ורופא עור גם יחד. לצד כל אלה, אנו רואים בווטרינריה רפואת משפחה: אנו מלווים את בעל החיים בכל שלבי חייו, מגור קטן המצטרף למשפחה ועד לבגרותו ולזקנתו, וערים לצרכיו המשתנים.</p>
+            <p>אנו לעולם רואים לא רק את הבעיה הרפואית, אלא גם את המטופל ואת בני משפחתו. טיפול בבעל חיים הוא מסע משותף — מורכב, מרגש ובעיקר מהנה — ואנו רואים את עצמנו חלק בלתי נפרד ממנו.</p>
+          </blockquote>
+          <div class="sig">תמיד איתכם, משה ותומר <span>· מרפאת בן ארי</span></div>
+        </div>
+      </div>
     </section>
 
     <!-- ============ SERVICES ============ -->
     <section class="band band--alt" id="services">
       <div class="wrap">
         <div class="sec-head reveal">
-          <span class="eyebrow">מה אנחנו עושים</span>
+          <span class="eyebrow">שירותי המרפאה</span>
           <h2>טיפול וטרינרי מקיף תחת קורת גג אחת</h2>
-          <p>מרפואה מונעת ועד ניתוחים מורכבים — הכול במרפאה אחת, עם ציוד דימות מתקדם ורצף טיפול שמכיר את בעל החיים שלכם לאורך זמן.</p>
+          <p>מרפואה מונעת ועד ניתוחים מורכבים — בדיקות, הדמיה, מעבדה וטיפולים במקום אחד, עם רצף טיפולי שמכיר את בעל החיים שלכם לאורך זמן.</p>
         </div>
         <div class="cards">
           <article class="card reveal">
-            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></div>
-            <h3>טיפול שוטף וחיסונים</h3>
-            <p>בדיקות תקופתיות, חיסונים, מניעת טפילים ותוכנית בריאות מותאמת לגיל ולגזע.</p>
-          </article>
-          <article class="card reveal">
             <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3a5 5 0 0 1 8 0c1 3-1 4-1 8s-1 10-3 10-2-4-3-4-1 4-3 4-2-6-2-10-2-5-1-8z"/></svg></div>
             <h3>כירורגיה ואורתופדיה</h3>
-            <p>ניתוחים כירורגיים ואורתופדיים לכלבים וחתולים בחדר ניתוח מאובזר, עם ניטור מלא.</p>
+            <p>רוב הניתוחים הכירורגיים והאורתופדיים — עיקור, סירוס, הסרת גידולים ותיקון שברים. הרדמה בניטור מלא ובדיקות דם מקדימות בעת הצורך. אלפי ניתוחים בוצעו במרפאה.</p>
+          </article>
+          <article class="card reveal">
+            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></div>
+            <h3>רפואה מונעת וחיסונים</h3>
+            <p>חיסוני גורים וחיסונים תקופתיים המלווים בבדיקה בהתאם לגיל ולצורך, לצד שיחות התעדכנות ששומרות על קשר רציף בין המרפאה למטופלים.</p>
+          </article>
+          <article class="card reveal">
+            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0c0 5-4 8-8 8s-8-3-8-8z"/><path d="M12 4V2M9 12h6M12 9v6"/></svg></div>
+            <h3>טיפולים ובדיקות</h3>
+            <p>טיפול בבעיות הרפואיות השוטפות: רפואה פנימית, רפואת עור, רפואת עיניים ונוירולוגיה — בעזרת המעבדה ואמצעי ההדמיה שבמרפאה.</p>
+          </article>
+          <article class="card reveal">
+            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/><circle cx="14" cy="14.5" r="2.5"/></svg></div>
+            <h3>רנטגן דיגיטלי ואולטרסאונד</h3>
+            <p>מערכת מתקדמת לצילומי רנטגן דיגיטליים ומכשיר אולטרסאונד — כלים מרכזיים בתהליך האבחון. בעת הצורך מוזמן למרפאה מומחה אולטרסאונד.</p>
+          </article>
+          <article class="card reveal">
+            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v5l-4 9a3 3 0 0 0 3 4h6a3 3 0 0 0 3-4l-4-9V3"/><path d="M7.5 15h9"/></svg></div>
+            <h3>שירותי מעבדה</h3>
+            <p>מעבדת דם חדישה המאפשרת קבלת תוצאות תוך דקות אחדות, לצד בדיקות שתן מלאות ובדיקות נוספות בהתאם למקרה.</p>
           </article>
           <article class="card reveal">
             <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 0 6 2 6 5 0 4-2 5-2 9 0 2-1 4-2 4s-1-3-2-3-1 3-2 3-2-2-2-4c0-4-2-5-2-9 0-3 2-5 6-5z"/></svg></div>
             <h3>טיפולי שיניים</h3>
-            <p>ניקוי אבנית, עקירות וטיפול במחלות חניכיים — בריאות הפה משפיעה על כל הגוף.</p>
+            <p>מעקב תקופתי אחר בריאות הפה של בעלי החיים, ניקויי אבנית וטיפולים לפי הצורך — כי בריאות הפה משפיעה על כל הגוף.</p>
           </article>
           <article class="card reveal">
-            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/><circle cx="14" cy="14.5" r="2.5"/></svg></div>
-            <h3>דימות: רנטגן ואולטרסאונד</h3>
-            <p>אבחון מהיר ומדויק במרפאה עם צילומי רנטגן דיגיטליים ובדיקות אולטרסאונד.</p>
-          </article>
-          <article class="card reveal">
-            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0c0 5-4 8-8 8s-8-3-8-8z"/><path d="M12 4V2M9 12h6"/></svg></div>
-            <h3>ייעוץ תזונתי</h3>
-            <p>בניית תפריט מותאם למשקל, לגיל ולמצב הרפואי — כולל דיאטות רפואיות.</p>
+            <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 16 0c0 5-4 8-8 8s-8-3-8-8z"/><path d="M9 11h6"/></svg></div>
+            <h3>ייעוץ תזונה</h3>
+            <p>התאמת תזונה בריאה לכלב ולחתול לפי הצרכים, הגודל, הגיל, הגזע והיקף הפעילות — כולל דיאטות רפואיות.</p>
           </article>
           <article class="card reveal">
             <div class="ci" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
-            <h3>ייעוץ התנהגותי</h3>
-            <p>ליווי בבעיות התנהגות ופתרונות מעשיים לחיים משותפים רגועים יותר.</p>
+            <h3>ייעוץ התנהגות</h3>
+            <p>הדרכה וליווי במגוון נושאים: חינוך גורים, גמילה מצרכים, חרדת נטישה ותוקפנות. במקרים מיוחדים נפנה למומחי התנהגות לסיוע נוסף.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="band" id="about">
-      <div class="wrap about">
-        <figure class="portrait photo reveal">
-          <img src="assets/team-benari.jpg" width="768" height="1024" loading="lazy" alt="ד״ר משה בן ארי מחבק שני כלבי רועים במרפאה" />
-          <span class="tag">ד"ר משה בן ארי · וטרינר</span>
-        </figure>
-        <div class="reveal">
-          <span class="eyebrow">מי מטפל בכם</span>
-          <h2>רופא אחד שמכיר את החיה שלכם — לאורך כל הדרך</h2>
-          <p>ד"ר משה בן ארי מפעיל את המרפאה ברמת אביב ומלווה משפחות רבות בצפון תל אביב. הגישה פשוטה: להקשיב, להסביר בגובה העיניים, ולבנות טיפול שמתאים גם לחיה וגם לכם.</p>
-          <p>הרציפות היא היתרון — אותו רופא שמכיר את ההיסטוריה הרפואית, מזהה שינויים מוקדם ומקבל החלטות טובות יותר.</p>
-          <ul class="creds">
-            <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> חדר ניתוח ומעבדת דימות במרפאה</li>
-            <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> יחס אישי וזמן אמיתי לכל מטופל</li>
-            <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> מעקב רציף וזמינות טלפונית לשאלות</li>
-          </ul>
+    <!-- ============ FEATURE: FAMILY MEDICINE ============ -->
+    <section class="band">
+      <div class="wrap">
+        <div class="feature reveal">
+          <figure class="fimg"><img src="assets/pack.jpg" width="540" height="960" loading="lazy" alt="רופא המרפאה מוקף בחבורת כלבים שממתינים בסבלנות" /></figure>
+          <div>
+            <span class="eyebrow">רפואת משפחה</span>
+            <h2>רופא אחד שמכיר את החיה שלכם — לאורך כל הדרך</h2>
+            <p>הרציפות היא היתרון הגדול. אותו רופא שמכיר את ההיסטוריה הרפואית מזהה שינויים מוקדם ומקבל החלטות טובות יותר. אנו מלווים כל משפחה בשינויים שהיא עוברת — לידות, שמחות, פרידות ונסיעות — ורואים את בעל החיים תמיד כחלק מן הסביבה ומן המשפחה שלו.</p>
+            <p>ומעבר לרפואה, אנחנו כאן לכל שאלה: איך גומלים כלב מצרכים? איך מלמדים את הילדים לעזור בטיפול? איך נערכים ללידה במשפחה, ומה עושים כשהכלב לא מפסיק לנבוח?</p>
+            <a class="btn btn--ghost" href="tel:+97236413361">דברו איתנו</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORIES ============ -->
+    <section class="band band--alt" id="stories">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">סיפורי מטופלים</span>
+          <h2>כל חיה — עולם שלם, וסיפור משלה</h2>
+          <p>לאורך השנים עברו במרפאה אינספור מטופלים בלתי נשכחים. הנה כמה מהם, בלשונו של ד"ר בן ארי.</p>
+        </div>
+        <div class="stories">
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span><div><h3>דולי</h3><div class="tagline">המלכה של רמת אביב</div></div></div>
+            <p>כלבת יורקשייר זעירה ואינטליגנטית שיילדנו במרפאה בניתוח קיסרי. המעניין: את הגידול חלקו ביניהן אמה ג׳וי ודודתה טוי — הדודה אף החלה לייצר חלב בעקבות היריון מדומה, ולקחה על עצמה את עיקר ההנקה.</p>
+          </article>
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2"/></svg></span><div><h3>ביז'ו</h3><div class="tagline">משקיע ביורו</div></div></div>
+            <p>לא בכל יום מחליט חתול לבלוע מטבע של 10 סנטים — אך ביז'ו הלך על זה. הוא הגיע לאחר שסירב לאכול והקיא ימים אחדים; צילום הרנטגן עורר חשד, והוא נותח בהצלחה והתאושש להפליא. מאז עברו בבית לתשלומים בשטרות ובאשראי בלבד…</p>
+          </article>
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span><div><h3>סטיבי</h3><div class="tagline">הבוקסר האופטימי</div></div></div>
+            <p>כלב בוקסר רב-עוצמה שניצל מהתעללות. חובב מגבות ושטיחונים שאותם נהג לחתוך ולאכול — ובילינו איתו ערב שלם במרפאה בשחזור מגבת מרצועות הבד שהוצאנו מקיבתו. למרות עברו הקשה, סטיבי לא איבד את האמון בבני אדם ואת האופטימיות.</p>
+          </article>
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></span><div><h3>קיטי</h3><div class="tagline">גורה שמצאה בית</div></div></div>
+            <p>גורת חתולים בת חודשיים שנמצאה באחת מחצרות תל אביב. מדהים היה לראות כיצד בזמן קצר נוצר קשר נפלא עם המשפחה — קיטי החלה לבטוח בעולם, לתת אהבה ולקבל אותה בחזרה. הגורים האלה נמצאים סביבנו כל הזמן; הם רק צריכים בית חם.</p>
+          </article>
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span><div><h3>באלו</h3><div class="tagline">הגולדן שנשאר צעיר לנצח</div></div></div>
+            <p>גולדן רטריבר בן 9, עליז ומלא חיים, שהגיע לאחר שאכל שקית תאנים, קילו שוקולד על עטיפותיו ואת שקית הזבל שנשארה מיום ההולדת. הפעם ללא ניתוח — אך לפני שנים ניתחנו אותו לאחר שבלע חיתול. הבעיה של הגולדנים והלברדורים? הם נשארים צעירים תמיד…</p>
+          </article>
+          <article class="story reveal">
+            <div class="st-head"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span><div><h3>שייקספיר</h3><div class="tagline">החבר שמזהה מצוקה</div></div></div>
+            <p>כלב מרשים מגן הכלבים ברחוב רידינג. כשחברו הגולדן לקי אושפז אצלו עם דלקת מעיים, העיר שייקספיר בלילה את בעליו כדי שיורידו את לקי החוצה — הוא זיהה את מצוקתו ופתר את הבעיה כחבר טוב. שאפו, שייקספיר.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -579,30 +602,14 @@
           <p>מטופלים אמיתיים, רגעים אמיתיים. כך נראה יום במרפאת בן ארי.</p>
         </div>
         <div class="gallery reveal">
-          <figure class="tall">
-            <img src="assets/dog-cat.jpg" width="720" height="960" loading="lazy" alt="כלב וחתול מצטנפים יחד" />
-            <figcaption>כלב וחתול — חברים הכי טובים</figcaption>
-          </figure>
-          <figure class="wide">
-            <img src="assets/cat-child.jpg" width="1000" height="666" loading="lazy" alt="ילדה מנשקת חתול על שולחן הבדיקה" />
-            <figcaption>ביקור רגוע, גם לקטנטנים</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/shih-tzu.jpg" width="1000" height="666" loading="lazy" alt="כלב שיצו בחדר ההמתנה" />
-            <figcaption>ממתינים בנוחות</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/scale-dog.jpg" width="960" height="960" loading="lazy" alt="כלב מחייך עומד על משקל במרפאה" />
-            <figcaption>בדיקת משקל שגרתית</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/puppy.jpg" width="1000" height="666" loading="lazy" alt="גור פוינטר עם עיניים גדולות מביט למעלה" />
-            <figcaption>גורים מקבלים יחס מיוחד</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/imaging-xray.jpg" width="686" height="459" loading="lazy" alt="וטרינר בוחן צילום רנטגן דיגיטלי של חיה" />
-            <figcaption>אבחון בעזרת רנטגן דיגיטלי</figcaption>
-          </figure>
+          <figure class="tall"><img src="assets/dog-cat.jpg" width="720" height="960" loading="lazy" alt="כלב וחתול מצטנפים יחד" /><figcaption>כלב וחתול — חברים הכי טובים</figcaption></figure>
+          <figure class="wide"><img src="assets/cat-child.jpg" width="1000" height="666" loading="lazy" alt="ילדה מנשקת חתול על שולחן הבדיקה" /><figcaption>ביקור רגוע, גם לקטנטנים</figcaption></figure>
+          <figure><img src="assets/surgery-monitor.jpg" width="1000" height="666" loading="lazy" alt="ד״ר תומר בן ארי בטיפול תחת ניטור הרדמה" /><figcaption>ניטור מלא בחדר הטיפולים</figcaption></figure>
+          <figure class="tall"><img src="assets/bana.jpg" width="540" height="960" loading="lazy" alt="כלב ויזלה עם עיניים גדולות ממתין במרפאה" /><figcaption>ממתינים בנחת</figcaption></figure>
+          <figure><img src="assets/scale-dog.jpg" width="960" height="960" loading="lazy" alt="כלב מחייך עומד על משקל במרפאה" /><figcaption>בדיקת משקל שגרתית</figcaption></figure>
+          <figure><img src="assets/imaging-xray.jpg" width="686" height="459" loading="lazy" alt="וטרינר בוחן צילום רנטגן דיגיטלי של חיה" /><figcaption>אבחון בעזרת רנטגן דיגיטלי</figcaption></figure>
+          <figure class="wide"><img src="assets/shih-tzu.jpg" width="1000" height="666" loading="lazy" alt="כלב שיצו בחדר ההמתנה" /><figcaption>פרצוף שאי אפשר לעמוד בפניו</figcaption></figure>
+          <figure><img src="assets/puppy.jpg" width="1000" height="666" loading="lazy" alt="גור פוינטר עם עיניים גדולות מביט למעלה" /><figcaption>גורים מקבלים יחס מיוחד</figcaption></figure>
         </div>
       </div>
     </section>
@@ -616,26 +623,52 @@
         </div>
         <div class="reviews">
           <article class="review reveal">
-            <div class="stars" aria-label="5 מתוך 5 כוכבים">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
-            </div>
-            <p>"יחס מקצועי ואכפתי שקשה למצוא. ד"ר בן ארי הקדיש זמן, הסביר כל דבר ופשוט הרגיע גם אותנו וגם את הכלב."</p>
-            <div class="who"><span class="av">ד</span><span><b>דנה ל.</b><span>רמת אביב</span></span></div>
+            <div class="stars" aria-label="5 מתוך 5 כוכבים"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <p>"ד"ר בן ארי מעניק שירות נהדר לכל לקוחותיו! אדם טוב לב, תמיד בעל סבלנות להסביר ולענות על כל שאלה, פועל במקצועיות ומביע חיבה אמתית כלפי בעלי החיים. אווירה מצוינת, שירות אדיב וטיפול מסור. מומלץ בחום!"</p>
+            <div class="who"><span class="av">L</span><span><b>Lily</b><span>מאי 2018</span></span></div>
           </article>
           <article class="review reveal">
-            <div class="stars" aria-label="5 מתוך 5 כוכבים">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
-            </div>
-            <p>"החתולה שלנו עברה ניתוח והליווי היה מהמם — מעקב אחרי הניתוח, זמינות בטלפון ותוצאה מצוינת. ממליצה בחום."</p>
-            <div class="who"><span class="av">י</span><span><b>יעל מ.</b><span>תל אביב</span></span></div>
+            <div class="stars" aria-label="5 מתוך 5 כוכבים"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <p>"וטרינר מקצועי, זמין ומאוד נחמד — והכי חשוב, מסביר פנים. הכלב שלנו רק מחכה לביקורים אצלו, והאמת שגם אנחנו. מומלץ בחום."</p>
+            <div class="who"><span class="av">נ</span><span><b>נועה</b><span>ספטמבר 2017</span></span></div>
           </article>
           <article class="review reveal">
-            <div class="stars" aria-label="5 מתוך 5 כוכבים">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
-            </div>
-            <p>"וטרינר שבאמת אכפת לו. מגיעים אליו שנים, והוא מכיר את הכלבים שלנו טוב יותר מאיתנו. אי אפשר לבקש יותר."</p>
-            <div class="who"><span class="av">א</span><span><b>אורי כ.</b><span>רמת השרון</span></span></div>
+            <div class="stars" aria-label="5 מתוך 5 כוכבים"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <p>"וטרינר מעולה שנותן לכל לקוח שירות מדהים — סבלני, מקצועי ואדיב. ללא ספק הטוב ביותר. מאוד מומלץ!"</p>
+            <div class="who"><span class="av">S</span><span><b>Shira</b><span>ספטמבר 2017</span></span></div>
           </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 מתוך 5 כוכבים"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <p>"רופא מדהים!!! עזר לי כל כך הרבה, היה קשוב, סבלני, עם אכפתיות אמיתית."</p>
+            <div class="who"><span class="av">נ</span><span><b>נטלי</b><span>אוגוסט 2017</span></span></div>
+          </article>
+          <article class="review reveal">
+            <div class="stars" aria-label="5 מתוך 5 כוכבים"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <p>"פניתי כדי לטפל בחתולה, והוא היה אדיב וסבלני. קיבלתי את כל העזרה שהייתי צריכה בטלפון, בלי צורך להגיע פיזית ובלי לגבות תשלום על השיחה."</p>
+            <div class="who"><span class="av">ק</span><span><b>קרן</b><span>אוקטובר 2014</span></span></div>
+          </article>
+          <article class="review reveal" style="display:flex;align-items:center;justify-content:center;text-align:center;background:var(--brand-soft);border-color:var(--brand-soft)">
+            <div>
+              <div style="font-size:2.4rem;font-weight:800;color:var(--brand);line-height:1">5.0★</div>
+              <p style="color:var(--ink-soft);margin-top:.4rem">מבוסס על חוות דעת לקוחות המרפאה</p>
+              <a class="btn btn--ghost" style="margin-top:1rem" href="tel:+97236413361">הצטרפו למשפחת המרפאה</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOS COMMUNITY ============ -->
+    <section class="band">
+      <div class="wrap">
+        <div class="feature rev reveal">
+          <figure class="fimg"><img src="assets/sos-event.jpg" width="1000" height="664" loading="lazy" alt="רופאי המרפאה מתנדבים ביום אימוץ של עמותת SOS לחיות" /></figure>
+          <div>
+            <span class="eyebrow">קהילה</span>
+            <h2>מלווים את עמותת ‘SOS לחיות’ מיום היווסדה</h2>
+            <p>אנחנו מאמינים שרפואה טובה לא נגמרת בין כותלי המרפאה. משה ותומר משתתפים בימי אימוץ, מסייעים בטיפול בבעלי חיים חסרי בית ומלווים משפחות מאמצות בתקופת ההתאקלמות של בעל החיים בביתו החדש — ובהמשך חייו.</p>
+            <p>גם בבחירת המקצוע וגם בהתנדבות, אנחנו עדיין מתרגשים בכל פעם מחדש למראה ילד שמאמץ גור, או קשיש שמחליט להכניס שמחה חדשה לחייו.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -646,7 +679,7 @@
         <div class="emergency reveal">
           <div>
             <h2>מצב חירום עם החיה שלכם?</h2>
-            <p>אם משהו נראה לא בסדר — אל תחכו. התקשרו למרפאה ונכוון אתכם מה לעשות עכשיו ומתי להגיע.</p>
+            <p>פציעה פתאומית, קשיי נשימה, הקאות חוזרות או בליעת חומר מסוכן — אל תחכו. התקשרו למרפאה, ונבצע הערכה ראשונית מהירה ונכוון אתכם מה לעשות עכשיו ומתי להגיע.</p>
           </div>
           <a class="btn" href="tel:+97236413361">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
@@ -656,8 +689,57 @@
       </div>
     </section>
 
+    <!-- ============ BLOG ============ -->
+    <section class="band band--alt" id="blog">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">מאמרים ועדכונים</span>
+          <h2>מהבלוג של המרפאה</h2>
+          <p>תכנים מקצועיים על בריאות הכלב והחתול, מאת ד"ר משה וד"ר תומר בן ארי.</p>
+        </div>
+        <div class="posts">
+          <article class="post reveal">
+            <time datetime="2026-08-05">5 באוגוסט 2026</time>
+            <h3>וטרינר חירום ברמת אביב – מה חשוב לדעת</h3>
+            <p class="ex">מתי נדרש וטרינר חירום, מה קורה בהגעה למרפאה, וכיצד מתבצעת הערכה ראשונית מהירה במצבים של פציעה, קשיי נשימה או בליעת חומר מסוכן.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%95%d7%98%d7%a8%d7%99%d7%a0%d7%a8-%d7%97%d7%99%d7%a8%d7%95%d7%9d-%d7%91%d7%a8%d7%9e%d7%aa-%d7%90%d7%91%d7%99%d7%91-%d7%9e%d7%94-%d7%97%d7%a9%d7%95%d7%91-%d7%9c%d7%93%d7%a2%d7%aa-2/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+          <article class="post reveal">
+            <time datetime="2026-07-23">23 ביולי 2026</time>
+            <h3>רבים מבעלי חיות המחמד פונים למרפאה וטרינרית</h3>
+            <p class="ex">על המרפאה הפועלת למעלה מ-40 שנה בתל אביב, ומדוע רצף טיפולי ומעקב מתמשך עושים את ההבדל בבריאות הכלב והחתול.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%a8%d7%91%d7%99%d7%9d-%d7%9e%d7%91%d7%a2%d7%9c%d7%99-%d7%97%d7%99%d7%95%d7%aa-%d7%94%d7%9e%d7%97%d7%9e%d7%93-%d7%a4%d7%95%d7%a0%d7%99%d7%9d-%d7%9c%d7%9e%d7%a8%d7%a4%d7%90%d7%94-%d7%95%d7%98%d7%a8/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+          <article class="post reveal">
+            <time datetime="2026-06-29">29 ביוני 2026</time>
+            <h3>כך תזהו בזמן שהכלב או החתול שלכם זקוקים לווטרינר</h3>
+            <p class="ex">מערך רפואי מלא המאפשר לבצע במקום אחד בדיקות, הדמיה, טיפולים ובמידת הצורך גם ניתוחים — וסימנים שכדאי לשים לב אליהם מוקדם.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%9b%d7%9a-%d7%aa%d7%96%d7%94%d7%95-%d7%91%d7%96%d7%9e%d7%9f-%d7%a9%d7%94%d7%9b%d7%9c%d7%91-%d7%90%d7%95-%d7%94%d7%97%d7%aa%d7%95%d7%9c-%d7%a9%d7%9c%d7%9b%d7%9d-%d7%96%d7%a7%d7%95%d7%a7%d7%99%d7%9d/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+          <article class="post reveal">
+            <time datetime="2026-05-28">28 במאי 2026</time>
+            <h3>במצבים מורכבים, הזמן בין אבחון לטיפול הוא קריטי</h3>
+            <p class="ex">כשכל דקה חשובה — היכולת לבצע אבחון, הדמיה וטיפול תחת קורת גג אחת מקצרת את הדרך מהחשד להחלטה הטיפולית.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%91%d7%9e%d7%a6%d7%91%d7%99%d7%9d-%d7%95%d7%98%d7%a8%d7%99%d7%a0%d7%a8%d7%99%d7%99%d7%9d-%d7%9e%d7%95%d7%a8%d7%9b%d7%91%d7%99%d7%9d-%d7%94%d7%96%d7%9e%d7%9f-%d7%91%d7%99%d7%9f-%d7%90%d7%91%d7%97/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+          <article class="post reveal">
+            <time datetime="2026-04-27">27 באפריל 2026</time>
+            <h3>מעקב רפואי לאורך זמן — להכיר את מצבו של בעל החיים</h3>
+            <p class="ex">ליווי רפואי מתמשך מאפשר לזהות שינויים מוקדם ולשמור על רצף טיפולי, גם כשאין סימנים ברורים לבעיה.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%9e%d7%a2%d7%a7%d7%91-%d7%a8%d7%a4%d7%95%d7%90%d7%99-%d7%9c%d7%90%d7%95%d7%a8%d7%9a-%d7%96%d7%9e%d7%9f-%d7%9e%d7%90%d7%a4%d7%a9%d7%a8-%d7%9c%d7%94%d7%9b%d7%99%d7%a8-%d7%90%d7%aa-%d7%9e%d7%a6%d7%91/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+          <article class="post reveal">
+            <time datetime="2026-03-25">25 במרץ 2026</time>
+            <h3>טיפול וטרינרי כחלק מהמעקב השוטף אחר הבריאות</h3>
+            <p class="ex">ליווי רפואי לאורך זמן מאפשר לשמור על יציבות בריאותית ולהגיב מוקדם לשינויים — עוד לפני שמופיעים סימנים ברורים.</p>
+            <a class="more" href="https://www.bvet.co.il/%d7%a4%d7%95%d7%a1%d7%98%d7%99%d7%9d/%d7%98%d7%99%d7%a4%d7%95%d7%9c-%d7%95%d7%98%d7%a8%d7%99%d7%a0%d7%a8%d7%99-%d7%94%d7%95%d7%90-%d7%97%d7%9c%d7%a7-%d7%9e%d7%94%d7%9e%d7%a2%d7%a7%d7%91-%d7%94%d7%a9%d7%95%d7%98%d7%a3-%d7%90%d7%97%d7%a8/" target="_blank" rel="noopener">קראו עוד <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ LOCATION ============ -->
-    <section class="band band--alt" id="location">
+    <section class="band" id="location">
       <div class="wrap">
         <div class="sec-head reveal">
           <span class="eyebrow">שעות ומיקום</span>
@@ -680,12 +762,8 @@
             </ul>
             <a class="btn btn--ghost" style="margin-top:1.3rem" href="https://maps.google.com/?q=ברודצקי+43+תל+אביב" target="_blank" rel="noopener">ניווט עם Waze / Google Maps</a>
           </div>
-
           <div class="map reveal">
-            <iframe
-              title="מפה: מרפאת בן ארי, ברודצקי 43, רמת אביב"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=34.78846%2C32.10553%2C34.80846%2C32.11353&layer=mapnik&marker=32.10953%2C34.79846"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="מפה: מרפאת בן ארי, ברודצקי 43, רמת אביב" src="https://www.openstreetmap.org/export/embed.html?bbox=34.78846%2C32.10553%2C34.80846%2C32.11353&layer=mapnik&marker=32.10953%2C34.79846" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <a class="map-cta" href="https://maps.google.com/?q=ברודצקי+43+תל+אביב" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               מרפאת בן ארי · ברודצקי 43
@@ -696,10 +774,10 @@
     </section>
 
     <!-- ============ FAQ ============ -->
-    <section class="band" id="faq">
+    <section class="band band--alt" id="faq">
       <div class="wrap">
-        <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
-          <span class="eyebrow" style="justify-content:center">שאלות נפוצות</span>
+        <div class="sec-head center reveal">
+          <span class="eyebrow">שאלות נפוצות</span>
           <h2>כל מה שכדאי לדעת לפני הביקור</h2>
         </div>
         <div class="faq">
@@ -709,19 +787,23 @@
           </details>
           <details class="reveal">
             <summary>אילו בעלי חיים אתם מטפלים בהם? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
-            <div class="ans">המרפאה מתמחה בכלבים ובחתולים — מרפואה מונעת וחיסונים ועד ניתוחים, טיפולי שיניים ודימות.</div>
+            <div class="ans">המרפאה מתמחה בכלבים ובחתולים — מרפואה מונעת וחיסונים ועד ניתוחים, טיפולי שיניים, מעבדה ודימות.</div>
+          </details>
+          <details class="reveal">
+            <summary>האם מבצעים ניתוחים במקום? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+            <div class="ans">כן. במרפאה חדר ניתוח מאובזר לניתוחים כירורגיים ואורתופדיים, עם מכונת הרדמה וניטור מלא ובדיקות דם מקדימות בעת הצורך. במקרים מורכבים נצרף מנתח מומחה או נפנה לבית החולים הווטרינרי.</div>
+          </details>
+          <details class="reveal">
+            <summary>אילו אמצעי אבחון קיימים במרפאה? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
+            <div class="ans">מערכת רנטגן דיגיטלי, מכשיר אולטרסאונד ומעבדת דם חדישה המאפשרת קבלת תוצאות תוך דקות — כך שניתן לאבחן ולטפל במקום אחד.</div>
           </details>
           <details class="reveal">
             <summary>מה כדאי להביא לביקור הראשון? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
             <div class="ans">אם יש — פנקס חיסונים ומסמכים רפואיים קודמים. כלבים ברצועה וחתולים בכלוב נשיאה, כדי שהביקור יהיה בטוח ורגוע לכולם.</div>
           </details>
           <details class="reveal">
-            <summary>האם מבצעים ניתוחים במקום? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
-            <div class="ans">כן. במרפאה חדר ניתוח מאובזר לניתוחים כירורגיים ואורתופדיים, לצד ציוד דימות של רנטגן דיגיטלי ואולטרסאונד לאבחון מהיר.</div>
-          </details>
-          <details class="reveal">
             <summary>איפה אתם ממוקמים ואיך מגיעים? <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></summary>
-            <div class="ans">רחוב ברודצקי 43 ברמת אביב, צפון תל אביב. ניתן לנווט ישירות דרך Google Maps או Waze מהכפתור למעלה.</div>
+            <div class="ans">רחוב ברודצקי 43 ברמת אביב, במרכז המסחרי הצמוד לקניון רמת אביב. ניתן לנווט ישירות דרך Google Maps או Waze מהכפתור למעלה.</div>
           </details>
         </div>
       </div>
@@ -735,17 +817,18 @@
         <div class="foot-brand">
           <a class="brand" href="#top">
             <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.2-9.2-8.2C1 9.7 2.5 6 6 6c2 0 3.2 1.2 4 2.3C10.8 7.2 12 6 14 6c3.5 0 5 3.7 3.2 6.8C18.7 16.8 12 21 12 21z"/></svg></span>
-            <span>מרפאת בן ארי<small>ד"ר משה בן ארי · וטרינר</small></span>
+            <span>מרפאת בן ארי<small>ד"ר משה וד"ר תומר בן ארי · וטרינרים</small></span>
           </a>
-          <p>מרפאה וטרינרית לכלבים ולחתולים בצפון תל אביב. טיפול מקצועי, אישי ורציף — בכל שלב בחיי החיה שלכם.</p>
+          <p>המרפאה הווטרינרית הוותיקה בתל אביב, מאז 1985. טיפול מקצועי, אישי ורציף לכלב ולחתול — בכל שלב בחייהם.</p>
         </div>
         <div>
           <h4>ניווט</h4>
           <ul>
+            <li><a href="#about">על המרפאה</a></li>
             <li><a href="#services">שירותי המרפאה</a></li>
-            <li><a href="#about">ד"ר משה בן ארי</a></li>
+            <li><a href="#stories">סיפורי מטופלים</a></li>
             <li><a href="#reviews">המלצות לקוחות</a></li>
-            <li><a href="#faq">שאלות נפוצות</a></li>
+            <li><a href="#blog">מאמרים ועדכונים</a></li>
           </ul>
         </div>
         <div>
@@ -760,7 +843,7 @@
       </div>
       <div class="foot-bottom">
         <span>© מרפאת בן ארי · כל הזכויות שמורות</span>
-        <span>וטרינר בצפון תל אביב · רמת אביב</span>
+        <span>מרפאה וטרינרית בתל אביב · רמת אביב · מאז 1985</span>
       </div>
     </div>
   </footer>
@@ -779,18 +862,32 @@
 {
   "@context":"https://schema.org",
   "@type":"VeterinaryCare",
-  "name":"מרפאת בן ארי — ד\"ר משה בן ארי",
-  "description":"מרפאה וטרינרית לכלבים ולחתולים בצפון תל אביב: חיסונים, כירורגיה, טיפולי שיניים, דימות וייעוץ.",
+  "name":"מרפאת בן ארי — ד\"ר משה וד\"ר תומר בן ארי",
+  "description":"המרפאה הווטרינרית הוותיקה בתל אביב, מאז 1985. מרפאה לכלבים ולחתולים: כירורגיה ואורתופדיה, חיסונים, רנטגן דיגיטלי ואולטרסאונד, מעבדה, טיפולי שיניים וייעוץ.",
   "url":"https://www.bvet.co.il/",
   "telephone":"+972-3-6413361",
   "email":"benarivet@gmail.com",
+  "foundingDate":"1985",
+  "image":"https://www.bvet.co.il/wp-content/uploads/2026/06/vet-with-dogs-768x1024.jpg",
   "address":{"@type":"PostalAddress","streetAddress":"ברודצקי 43","addressLocality":"תל אביב-יפו","addressRegion":"רמת אביב","addressCountry":"IL"},
+  "geo":{"@type":"GeoCoordinates","latitude":32.10953,"longitude":34.79846},
   "areaServed":"צפון תל אביב",
   "priceRange":"$$",
+  "founder":{"@type":"Person","name":"ד\"ר משה בן ארי"},
+  "employee":[
+    {"@type":"Person","name":"ד\"ר משה בן ארי","jobTitle":"וטרינר"},
+    {"@type":"Person","name":"ד\"ר תומר בן ארי","jobTitle":"וטרינר"}
+  ],
   "openingHoursSpecification":[
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"13:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"16:00","closes":"19:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"14:30","closes":"17:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"5","bestRating":"5"},
+  "review":[
+    {"@type":"Review","author":{"@type":"Person","name":"Lily"},"datePublished":"2018-05-02","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"ד\"ר בן ארי מעניק שירות נהדר לכל לקוחותיו, במקצועיות ובחיבה אמיתית לבעלי החיים. מומלץ בחום."},
+    {"@type":"Review","author":{"@type":"Person","name":"נועה"},"datePublished":"2017-09-25","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"וטרינר מקצועי, זמין ומאוד נחמד. הכלב שלנו רק מחכה לביקורים אצלו."},
+    {"@type":"Review","author":{"@type":"Person","name":"קרן"},"datePublished":"2014-10-28","reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"אדיב וסבלני, נתן את כל העזרה שהייתי צריכה בטלפון בלי לגבות תשלום."}
   ]
 }
 </script>
@@ -800,8 +897,9 @@
   "@type":"FAQPage",
   "mainEntity":[
     {"@type":"Question","name":"איך קובעים תור?","acceptedAnswer":{"@type":"Answer","text":"מתקשרים למרפאה בטלפון 03-6413361 בשעות הפעילות. במצבי חירום מתקשרים מיד."}},
-    {"@type":"Question","name":"אילו בעלי חיים אתם מטפלים בהם?","acceptedAnswer":{"@type":"Answer","text":"המרפאה מתמחה בכלבים ובחתולים — מרפואה מונעת ועד ניתוחים, טיפולי שיניים ודימות."}},
-    {"@type":"Question","name":"האם מבצעים ניתוחים במקום?","acceptedAnswer":{"@type":"Answer","text":"כן, במרפאה חדר ניתוח מאובזר לניתוחים כירורגיים ואורתופדיים, לצד רנטגן דיגיטלי ואולטרסאונד."}}
+    {"@type":"Question","name":"אילו בעלי חיים אתם מטפלים בהם?","acceptedAnswer":{"@type":"Answer","text":"המרפאה מתמחה בכלבים ובחתולים — מרפואה מונעת ועד ניתוחים, טיפולי שיניים, מעבדה ודימות."}},
+    {"@type":"Question","name":"האם מבצעים ניתוחים במקום?","acceptedAnswer":{"@type":"Answer","text":"כן, במרפאה חדר ניתוח מאובזר לניתוחים כירורגיים ואורתופדיים, עם מכונת הרדמה וניטור מלא. במקרים מורכבים נצרף מנתח מומחה או נפנה לבית החולים הווטרינרי."}},
+    {"@type":"Question","name":"אילו אמצעי אבחון קיימים במרפאה?","acceptedAnswer":{"@type":"Answer","text":"רנטגן דיגיטלי, אולטרסאונד ומעבדת דם חדישה עם תוצאות תוך דקות — אבחון וטיפול במקום אחד."}}
   ]
 }
 </script>
@@ -829,15 +927,9 @@
     (function(){
       var badge=document.getElementById('openBadge');
       var DAYS=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
-      // opening intervals per day, in minutes from midnight
       var HOURS=[
-        [[600,780],[960,1140]], // Sun 10–13, 16–19
-        [[600,780],[960,1140]], // Mon
-        [[600,780],[960,1140]], // Tue
-        [[600,780],[960,1140]], // Wed
-        [[600,780],[960,1140]], // Thu
-        [[870,1020]],           // Fri 14:30–17:00
-        []                      // Sat closed
+        [[600,780],[960,1140]],[[600,780],[960,1140]],[[600,780],[960,1140]],
+        [[600,780],[960,1140]],[[600,780],[960,1140]],[[870,1020]],[]
       ];
       function now(){
         try{
@@ -846,12 +938,9 @@
           var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
           var h=parseInt(o.hour,10);if(h===24)h=0;
           return {d:map[o.weekday],m:h*60+parseInt(o.minute,10)};
-        }catch(e){
-          var n=new Date();return {d:n.getDay(),m:n.getHours()*60+n.getMinutes()};
-        }
+        }catch(e){var n=new Date();return {d:n.getDay(),m:n.getHours()*60+n.getMinutes()};}
       }
       function fmt(m){var h=Math.floor(m/60),mm=m%60;return h+':'+(mm<10?'0':'')+mm;}
-      // highlight today's row
       var body=document.getElementById('hoursBody');
       var t=now();
       if(body){Array.prototype.forEach.call(body.querySelectorAll('tr'),function(tr){
@@ -867,9 +956,7 @@
       var txt;
       if(open){txt='פתוח כעת · עד '+fmt(until);}
       else{
-        if(!nextOpen){ // find next open day within a week
-          for(var k=1;k<=7;k++){var dd=(t.d+k)%7;if(HOURS[dd].length){nextOpen={day:dd,at:HOURS[dd][0][0],future:true};break;}}
-        }
+        if(!nextOpen){for(var k=1;k<=7;k++){var dd=(t.d+k)%7;if(HOURS[dd].length){nextOpen={day:dd,at:HOURS[dd][0][0],future:true};break;}}}
         if(nextOpen){
           var when=(nextOpen.day===t.d&&!nextOpen.future)?'היום':(nextOpen.day===(t.d+1)%7?'מחר':'ביום '+DAYS[nextOpen.day]);
           txt='סגור כעת · נפתח '+when+' ב-'+fmt(nextOpen.at);
