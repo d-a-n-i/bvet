@@ -1,0 +1,530 @@
+{
+"book-cat-back": {
+"widths": [
+240,
+480,
+800
+],
+"w": 535,
+"h": 800,
+"fallback": "book-cat-back-800.jpg",
+"alpha": false
+},
+"book-cat": {
+"widths": [
+240,
+250
+],
+"w": 167,
+"h": 250,
+"fallback": "book-cat-250.jpg",
+"alpha": false
+},
+"book-dog-back": {
+"widths": [
+240,
+480,
+800
+],
+"w": 535,
+"h": 800,
+"fallback": "book-dog-back-800.jpg",
+"alpha": false
+},
+"book-dog": {
+"widths": [
+240,
+250
+],
+"w": 167,
+"h": 250,
+"fallback": "book-dog-250.jpg",
+"alpha": false
+},
+"chihuahua-sweater": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 865,
+"fallback": "chihuahua-sweater-1000.jpg",
+"alpha": false
+},
+"dog-pack-jessica": {
+"widths": [
+240,
+480,
+540
+],
+"w": 304,
+"h": 540,
+"fallback": "dog-pack-jessica-540.jpg",
+"alpha": false
+},
+"dr-moshe-ben-ari": {
+"widths": [
+240,
+480,
+502
+],
+"w": 502,
+"h": 502,
+"fallback": "dr-moshe-ben-ari-502.png",
+"alpha": true
+},
+"dr-moshe-hug-dog": {
+"widths": [
+240,
+480,
+800,
+1200
+],
+"w": 900,
+"h": 1200,
+"fallback": "dr-moshe-hug-dog-1200.jpg",
+"alpha": false
+},
+"dr-moshe-with-dogs": {
+"widths": [
+240,
+480,
+800,
+1200
+],
+"w": 900,
+"h": 1200,
+"fallback": "dr-moshe-with-dogs-1200.jpg",
+"alpha": false
+},
+"dr-tomer-ben-ari": {
+"widths": [
+240,
+480,
+502
+],
+"w": 502,
+"h": 502,
+"fallback": "dr-tomer-ben-ari-502.png",
+"alpha": true
+},
+"family-visit": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 562,
+"fallback": "family-visit-1000.jpg",
+"alpha": false
+},
+"girl-kitten-carrier": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "girl-kitten-carrier-1000.jpg",
+"alpha": false
+},
+"jul-and-mawi": {
+"widths": [
+240,
+480,
+720
+],
+"w": 540,
+"h": 720,
+"fallback": "jul-and-mawi-720.jpg",
+"alpha": false
+},
+"kiwi-smile": {
+"widths": [
+240,
+480,
+800,
+960
+],
+"w": 960,
+"h": 960,
+"fallback": "kiwi-smile-960.jpg",
+"alpha": false
+},
+"lhasa-owner": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 560,
+"h": 1000,
+"fallback": "lhasa-owner-1000.jpg",
+"alpha": false
+},
+"logo": {
+"widths": [
+240,
+480,
+577
+],
+"w": 505,
+"h": 577,
+"fallback": "logo-577.png",
+"alpha": true
+},
+"maine-coon-face": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 750,
+"fallback": "maine-coon-face-1000.jpg",
+"alpha": false
+},
+"maine-coon-hug": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 750,
+"fallback": "maine-coon-hug-1000.jpg",
+"alpha": false
+},
+"miley-on-desk": {
+"widths": [
+240,
+480,
+540
+],
+"w": 304,
+"h": 540,
+"fallback": "miley-on-desk-540.jpg",
+"alpha": false
+},
+"pointer-puppy-eyes": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "pointer-puppy-eyes-1000.jpg",
+"alpha": false
+},
+"puggle-puppy": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 664,
+"fallback": "puggle-puppy-1000.jpg",
+"alpha": false
+},
+"shihtzu-face": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 664,
+"fallback": "shihtzu-face-1000.jpg",
+"alpha": false
+},
+"slogan": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 72,
+"fallback": "slogan-600.png",
+"alpha": true
+},
+"sos-adoption-day": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "sos-adoption-day-1000.jpg",
+"alpha": false
+},
+"story-balu": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-balu-600.jpg",
+"alpha": false
+},
+"story-bijou": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-bijou-600.jpg",
+"alpha": false
+},
+"story-boni": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-boni-600.jpg",
+"alpha": false
+},
+"story-brandy": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-brandy-600.jpg",
+"alpha": false
+},
+"story-dolly": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-dolly-600.jpg",
+"alpha": false
+},
+"story-kitty": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-kitty-600.jpg",
+"alpha": false
+},
+"story-maurice": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-maurice-600.jpg",
+"alpha": false
+},
+"story-naftali": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-naftali-600.jpg",
+"alpha": false
+},
+"story-shakespeare": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-shakespeare-600.jpg",
+"alpha": false
+},
+"story-stevie": {
+"widths": [
+240,
+480,
+600
+],
+"w": 600,
+"h": 398,
+"fallback": "story-stevie-600.jpg",
+"alpha": false
+},
+"team-moshe-tomer": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 562,
+"fallback": "team-moshe-tomer-1000.jpg",
+"alpha": false
+},
+"three-cavaliers": {
+"widths": [
+240,
+480,
+800,
+1200
+],
+"w": 1200,
+"h": 674,
+"fallback": "three-cavaliers-1200.jpg",
+"alpha": false
+},
+"toddler-and-lab": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "toddler-and-lab-1000.jpg",
+"alpha": false
+},
+"tomer-clinic-dog-portrait": {
+"widths": [
+240,
+480,
+800,
+900
+],
+"w": 506,
+"h": 900,
+"fallback": "tomer-clinic-dog-portrait-900.jpg",
+"alpha": false
+},
+"tomer-digital-xray": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 562,
+"fallback": "tomer-digital-xray-1000.jpg",
+"alpha": false
+},
+"tomer-dog-joy": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 562,
+"fallback": "tomer-dog-joy-1000.jpg",
+"alpha": false
+},
+"tomer-holding-dog": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 562,
+"fallback": "tomer-holding-dog-1000.jpg",
+"alpha": false
+},
+"tomer-surgery-monitoring": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "tomer-surgery-monitoring-1000.jpg",
+"alpha": false
+},
+"two-puppies": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 750,
+"fallback": "two-puppies-1000.jpg",
+"alpha": false
+},
+"vizsla-bana": {
+"widths": [
+240,
+480,
+540
+],
+"w": 304,
+"h": 540,
+"fallback": "vizsla-bana-540.jpg",
+"alpha": false
+},
+"waiting-room-shihtzu": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 666,
+"fallback": "waiting-room-shihtzu-1000.jpg",
+"alpha": false
+},
+"waiting-room-terrier": {
+"widths": [
+240,
+480,
+800,
+1000
+],
+"w": 1000,
+"h": 617,
+"fallback": "waiting-room-terrier-1000.jpg",
+"alpha": false
+}
+}

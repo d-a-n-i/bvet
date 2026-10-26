@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://d85c.com/bvet/sitemap.xml
